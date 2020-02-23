@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link-context": "^1.0.19",
+    "babel-core": "7.0.0-bridge.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.6.0",
+    "graphql-anywhere": "^4.2.6",
+    "graphql-tag": "^2.10.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.2",
+    "react": "^16.12.0",
+    "react-apollo": "^3.1.3",
+    "react-dom": "^16.12.0",
+    "react-marked-markdown": "^1.4.6",
+    "react-meta-tags": "^0.7.4"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js -p $PORT",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-jest": "^25.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "jest": "^25.1.0",
+    "jest-enzyme": "^7.1.2",
+    "puppeteer": "^2.1.1"
+  }
+}
