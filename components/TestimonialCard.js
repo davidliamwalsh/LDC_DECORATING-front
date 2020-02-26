@@ -1,17 +1,50 @@
 import { Component } from 'react'
+import { Query } from 'react-apollo'
+import gql from 'graphql-tag'
+import moment from 'moment'
 
 class TestimonialCard extends Component {
 
-  render () {
-    const { testimonial } = this.props
+  constructor (props) {
+    super(props)
 
-    return <div className='col-xs-12 col-md-6 col-lg-3' style={{alignItems: 'stretch', display: 'flex'}}>
-      <div className='card c-card'>
-        <div className='card-body'>
-          <h5 className='card-title'>{testimonial.title}</h5>
-        </div>
-      </div>
-    </div>
+    this.TESTIMONIALS_QUERY = gql`
+      query testimonials {
+        testimonials  {
+          slug
+          id
+          title
+          body
+          createdAt
+        }
+      }
+    `
+  }
+
+  render () {
+    const { testimonialSize } = this.props
+
+    return <Query query={this.TESTIMONIALS_QUERY}>
+      {({ loading, data }) => {
+        if (loading) {
+          return <>
+            <p>Loading...</p>
+          </>
+        } else {
+          return <>
+            <div className='c-testimonialCard'>
+              {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
+                return <div>
+                  <h5>{testimonial.title}</h5>
+                  <h5>{testimonial.body}</h5>
+                  <h5>{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
+                </div>
+              })}
+            </div>
+          </>
+        }
+      }}
+    </Query>
   }
 }
 

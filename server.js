@@ -17,6 +17,22 @@ app.prepare()
     return app.render(req, res, '/', req.query)
   })
 
+  server.get('/about', (req, res) => {
+    return app.render(req, res, '/about', req.query)
+  })
+
+  server.get('/testimonials', (req, res) => {
+    return app.render(req, res, '/testimonials', req.query)
+  })
+
+  server.get('/contact', (req, res) => {
+    return app.render(req, res, '/contact', req.query)
+  })
+
+  server.get('/gallery', (req, res) => {
+    return app.render(req, res, '/gallery', req.query)
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res)
   })
