@@ -3,14 +3,14 @@ import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import moment from 'moment'
 
-class NewsArticleCard extends Component {
+class TestimonialPage extends Component {
 
   constructor (props) {
     super(props)
 
-    this.NEWSARTICLES_QUERY = gql`
-      query newsArticles {
-        newsArticles  {
+    this.TESTIMONIALS_QUERY = gql`
+      query testimonials {
+        testimonials  {
           slug
           id
           title
@@ -22,9 +22,9 @@ class NewsArticleCard extends Component {
   }
 
   render () {
-    const { newsArticleSize } = this.props
+    const { testimonialSize } = this.props
 
-    return <Query query={this.NEWSARTICLES_QUERY}>
+    return <Query query={this.TESTIMONIALS_QUERY}>
       {({ loading, data }) => {
         if (loading) {
           return <>
@@ -32,12 +32,12 @@ class NewsArticleCard extends Component {
           </>
         } else {
           return <>
-            <div className='c-newsArticleCard'>
-              {data.newsArticles.slice(0, newsArticleSize).map((newsArticle, index) => {
+            <div className='c-testimonials'>
+              {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
                 return <div>
-                  <h5>{newsArticle.title}</h5>
-                  <h5>{newsArticle.body}</h5>
-                  <h5>{moment(newsArticle.createdAt).format('MMMM Do YYYY')}</h5>
+                  <h5>{testimonial.title}</h5>
+                  <h5>{testimonial.body}</h5>
+                  <h5>{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
                 </div>
               })}
             </div>
@@ -48,4 +48,4 @@ class NewsArticleCard extends Component {
   }
 }
 
-export default NewsArticleCard
+export default TestimonialPage

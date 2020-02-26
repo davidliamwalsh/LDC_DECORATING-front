@@ -1,0 +1,230 @@
+.c-navbar {
+  height: 10vh;
+  background: black;
+  position: relative;
+
+  &-active {
+    background: blue;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+
+    img {
+      width: 50px;
+    }
+  }
+
+  &__actions {
+    display: none;
+  }
+
+  &__action-link {
+    padding: 0 .5em;
+  }
+
+  &__burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+
+    &-line--top,
+    &-line--bottom {
+      transition: all 0.2s ease-in-out;
+      width: 35px;
+      height: 2px;
+      background: $white;
+      margin: 4px;
+    }
+
+    &-line--middle {
+      transition: all 0.2s ease-in-out;
+      width: 20px;
+      height: 2px;
+      background: $white;
+      margin: 4px;
+      align-self: flex-end;
+    }
+
+    &-line--bottom {
+      width: 30px;
+      align-self: flex-end;
+    }
+
+    &-top {
+      transition: all 0.3s ease-in-out;
+      transform: rotate(-140deg) translateY(-11px) translateX(-7px);
+    }
+    &-middle {
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+    }
+    &-bottom {
+      transition: all 0.3s ease-in-out;
+      transform: rotate(140deg) translateY(6px) translateX(-3px);
+      width: 35px;
+    }
+  }
+  
+  &__links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    position: fixed;
+    background: $primary;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    left: 100vw;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 6;
+
+    .fas {
+      color: $white;
+      font-size: 25px;
+      font-weight: 700;
+    }
+  }
+
+  &__link { 
+    opacity: 0;
+
+    a {
+      color: $white;
+      font-size: 25px;
+    }
+
+    &:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    &:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    &:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    &:nth-child(4) {
+      transition: all 0.5s ease 0.8s;
+    }
+    &:nth-child(5) {
+      transition: all 0.5s ease 1s;
+    }
+    &:nth-child(6) {
+      transition: all 0.5s ease 1.2s;
+    }
+    &:nth-child(7) {
+      transition: all 0.5s ease 1.4s;
+    }
+    &:nth-child(8) {
+      transition: all 0.5s ease 1.6s;
+    }
+  }
+
+  .fade {
+    opacity: 1;
+  }
+
+  &--open {
+    left: 0vh;
+    pointer-events: all;
+  }
+}
+
+@media screen and (min-width: $tablet-break) {
+  .c-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+
+    &__logo {
+      position: relative;
+      left: auto;
+      top: auto;
+      transform: none;
+    }
+
+    &__actions {
+      display: flex;
+
+      a {
+        color: $white;
+        font-size: 16px;
+        padding: 0 1vw;
+      }
+      .fas {
+        color: $white;
+      }
+    }
+
+    &__action {
+      display: none;
+    }
+
+    &__burger {
+      display: none;
+    }
+
+    &__links {
+      position: relative;
+      width: auto;
+      height: 10vh;
+      flex-direction: row;
+      clip-path: none;
+      -webkit-clip-path: none;
+      transition: none;
+      pointer-events: none;
+      background: transparent;
+      align-items: auto;
+      margin-left: 0;
+      left: auto;
+    }
+
+    &__link {
+      opacity: 1;
+      padding: 0 1vw;
+
+      a {
+        font-size: 16px;
+      }
+
+      &:nth-child(1) {
+        transition: none;
+      }
+      &:nth-child(2) {
+        transition: none;
+      }
+      &:nth-child(3) {
+        transition: none;
+      }
+      &:nth-child(4) {
+        transition: none;
+      }
+      &:nth-child(5) {
+        transition: none;
+      }
+      &:nth-child(6) {
+        transition: none;
+      }
+      &:nth-child(7) {
+        transition: none;
+      }
+      &:nth-child(8) {
+        transition: none;
+      }
+    }
+  }
+}
