@@ -1,5 +1,5 @@
 import { Component } from 'react'
-
+import withData from '../lib/withData'
 import Layout from '../components/Layout'
 
 class Contact extends Component {
@@ -9,4 +9,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact
+export default withData(Contact)

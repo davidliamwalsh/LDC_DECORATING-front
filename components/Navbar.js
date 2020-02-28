@@ -40,49 +40,48 @@ class Navbar extends Component {
   }
 
   render () {
-    return <div class={`c-navbar ${this.renderTransparantNavBar()}`}>
-      <div class="c-navbar__logo">
+    console.log(this.state.navBarOpen)
+
+    return <div className={`c-navbar ${this.renderTransparantNavBar()}`}>
+      <div className="c-navbar__logo">
         <a href="#"><img src="/static/ldc-logo.jpg" alt="" /></a>
       </div>
-      <div class="c-navbar__burger" onClick={this.burgerClick}>
-        <div class={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
-        <div class={`c-navbar__burger-line--middle ${this.burgerRotateMiddle()}`}></div>
-        <div class={`c-navbar__burger-line--bottom ${this.burgerRotateBottom()}`}></div>
+      <div className="c-navbar__burger" onClick={this.burgerClick}>
+        <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
+        <div className={`c-navbar__burger-line--middle ${this.burgerRotateMiddle()}`}></div>
+        <div className={`c-navbar__burger-line--bottom ${this.burgerRotateBottom()}`}></div>
       </div>
-      <div class={`c-navbar__links ${this.renderBurgerMenu()}`}>
-        <li class={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">New Cars</a>
+      <div className={`c-navbar__links ${this.renderBurgerMenu()}`}>
+        <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+          <a href="#">Home</a>
         </li>
-        <li class={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Electric Cars</a>
+        <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+          <a href="#">About</a>
         </li>
-        <li class={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Used Cars</a>
+        <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+          <a href="#">Testimonials</a>
         </li>
-        <li class={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Test Drive</a>
+        <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+          <a href="#">Gallery</a>
         </li>
-        <li class={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Find Us</a>
+        <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+          <a href="#">Contact</a>
         </li>
-        <li class={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Support</a>
-        </li>
-        <li class={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
-          <a class="c-navbar__action-link"href="#">Sign In</a>
-          <a class="c-navbar__action-link"href="#"><i class="fas fa-shopping-basket"></i></a>
+        <li className={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
+          <a className="c-navbar__action-link"href="#">Sign In</a>
+          <a className="c-navbar__action-link"href="#"><i className="fas fa-shopping-basket"></i></a>
         </li>
       </div>
 
-      <div class="c-navbar__actions">
-        <div class="c-navbar__actions-shop">
+      <div className="c-navbar__actions">
+        <div className="c-navbar__actions-shop">
           <a href="#">Shop</a>
         </div>
-        <div class="c-navbar__actions-signIn">
+        <div className="c-navbar__actions-signIn">
           <a href="#">Sign In</a>
         </div>
-        <div class="c-navbar__actions-checkout">
-          <a href="#"><i class="fas fa-shopping-basket"></i></a>
+        <div className="c-navbar__actions-checkout">
+          <a href="#"><i className="fas fa-shopping-basket"></i></a>
         </div>
       </div>
     </div>  
