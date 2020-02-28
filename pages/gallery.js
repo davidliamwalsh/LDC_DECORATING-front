@@ -1,5 +1,5 @@
 import { Component } from 'react'
-
+import withData from '../lib/withData'
 import Layout from '../components/Layout'
 import GalleryCard from '../components/GalleryCard'
 
@@ -16,4 +16,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery
+export default withData(Gallery)

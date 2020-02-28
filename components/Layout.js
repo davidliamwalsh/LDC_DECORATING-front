@@ -19,6 +19,7 @@ class Layout extends Component {
     
     return <>
       <MetaTags>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link id="favicon" rel="icon" href="/static/ldc-logo.jpg" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,7 +27,7 @@ class Layout extends Component {
       <Header />
         { this.props.children }
       <Footer />
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js" />
     </>
   }
 }

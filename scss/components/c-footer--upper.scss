@@ -1,19 +1,19 @@
 .c-footer--upper {
-  display: grid;
-  grid-template-columns: 1fr;
- 
+  display: flex;
+  flex-direction: column;
+  
   &__list {
-    border-top: 1px solid $white;
-    border-bottom: 1px solid $white;
+    border-top: 1px solid $darkgrey;
+    border-bottom: 1px solid $darkgrey;
     padding: .5em 0;
 
     &--head {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    
+
       &-title {
-        color: $lightgrey;
+        color: $white;
         font-weight: 400;
         font-size: 18px;
       }
@@ -35,25 +35,67 @@
       padding: .5em 0;
       font-size: 14px;
       font-weight: 100;
+      color: $xlightgrey;
   
       a {
-        color: $white;
+        color: $xlightgrey;
+      }
+
+      &__news-article {
+        display: grid;
+        grid-template-columns: 40px auto;
+        grid-gap: 1em;
+        color: $xlightgrey;
+
+        &--main {
+          &__title {
+            font-size: 14px;
+          }
+          &__body {
+            font-weight: 100;
+            font-size: 14px;
+          }
+        }
+       
+        &--date {
+          border: 3px solid $lightgrey;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          align-items: center;
+          display: flex;
+          &__item {
+            position: relative;
+            font-size: 12px;
+            font-weight: 100;
+            color: $white;
+          }
+        }
       }
     }
   }
 
   &__list:nth-child(2) {
+    border-top: none;
+  }
+  &__list:nth-child(3) {
     border: none;
   }
 }
 
-.active {
+.footer-item-active {
   display: block !important;
+}
+
+.active {
+  display: block;
 }
 
 @media screen and (min-width: $tablet-break) {
   .c-footer--upper {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 30% 30%;
+    grid-gap: 1em;
 
     &__list {
       border: none;
@@ -74,6 +116,10 @@
 
       &--item {
         font-size: 16px;
+
+        &__news-article {
+          grid-gap: .5em;
+        }
       }
     }
   }

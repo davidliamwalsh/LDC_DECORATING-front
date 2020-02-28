@@ -34,7 +34,7 @@ class TestimonialCard extends Component {
           return <>
             <div className='c-testimonialCard'>
               {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
-                return <div>
+                return <div key={index}>
                   <h5>{testimonial.title}</h5>
                   <h5>{testimonial.body}</h5>
                   <h5>{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
