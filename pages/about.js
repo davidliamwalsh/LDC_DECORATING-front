@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import withData from '../lib/withData'
 import Layout from '../components/Layout'
 
 class About extends Component {
@@ -8,4 +9,4 @@ class About extends Component {
   }
 }
 
-export default About
+export default withData(About)

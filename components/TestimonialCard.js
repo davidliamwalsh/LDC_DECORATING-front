@@ -13,6 +13,8 @@ class TestimonialCard extends Component {
         testimonials  {
           slug
           id
+          previewImage
+          image
           title
           body
           createdAt
@@ -20,7 +22,7 @@ class TestimonialCard extends Component {
       }
     `
   }
-
+  
   render () {
     const { testimonialSize } = this.props
 
@@ -32,12 +34,13 @@ class TestimonialCard extends Component {
           </>
         } else {
           return <>
-            <div className='c-testimonialCard'>
+            <div className="c-testimonialCard">
               {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
                 return <div key={index}>
-                  <h5>{testimonial.title}</h5>
-                  <h5>{testimonial.body}</h5>
-                  <h5>{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
+                  <img className="c-testimonialCard__" src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
+                  <h5 className="c-testimonialCard__">{testimonial.title}</h5>
+                  <h5 className="c-testimonialCard__">{testimonial.body}</h5>
+                  <h5 className="c-testimonialCard__">{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
                 </div>
               })}
             </div>
