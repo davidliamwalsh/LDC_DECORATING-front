@@ -1,6 +1,9 @@
 .c-footer--upper {
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
   
   &__list {
     border-top: 1px solid $darkgrey;
@@ -36,7 +39,11 @@
       font-size: 14px;
       font-weight: 100;
       color: $xlightgrey;
-  
+      
+      &-lineheight {
+        line-height: 135%;
+      }
+      
       a {
         color: $xlightgrey;
       }
@@ -122,5 +129,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: $desktop-break) {
+  .c-footer--upper {
+    padding: 1em 0;
   }
 }

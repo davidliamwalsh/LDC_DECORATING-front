@@ -74,7 +74,7 @@ class Footer extends Component {
           <div className="c-footer--upper__list--head">
             <h4 className="c-footer--upper__list--head-title">Latest News</h4>
           </div>
-          <div className={`c-footer--upper__list--body active`}>
+          <div className={`c-footer--upper__list--body footer-item-active`}>
             <NewsArticleFooter newsArticleSize={3} />
           </div>
         </div>
@@ -83,8 +83,8 @@ class Footer extends Component {
           <div className="c-footer--upper__list--head">
             <h4 className="c-footer--upper__list--head-title">Contact</h4>
           </div>
-          <div className={`c-footer--upper__list--body active`}>
-            <li className="c-footer--upper__list--item">
+          <div className={`c-footer--upper__list--body footer-item-active`}>
+            <li className="c-footer--upper__list--item c-footer--upper__list--item-lineheight">
               <p>
                 LDC Decorating Contractors Ltd<br />
                 Chamber 2<br />
