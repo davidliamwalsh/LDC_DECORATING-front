@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { withRouter } from 'next/router'
+import Link from 'next/link'
 
 class Navbar extends Component {
   constructor (props) {
@@ -40,11 +41,12 @@ class Navbar extends Component {
   }
 
   render () {
-    console.log(this.state.navBarOpen)
 
     return <div className={`c-navbar ${this.renderTransparantNavBar()}`}>
       <div className="c-navbar__logo">
-        <a href="#"><img src="/static/ldc-logo.jpg" alt="" /></a>
+        <Link href='/'>
+          <a><img src="/static/ldc-logo.jpg" alt="" /></a>
+        </Link>
       </div>
       <div className="c-navbar__burger" onClick={this.burgerClick}>
         <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
@@ -53,19 +55,34 @@ class Navbar extends Component {
       </div>
       <div className={`c-navbar__links ${this.renderBurgerMenu()}`}>
         <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Home</a>
+          <Link href='/'>
+            <a>Home</a>
+          </Link>
         </li>
         <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">About</a>
+          <Link href='/about'>
+            <a>About</a>
+          </Link>
         </li>
         <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Testimonials</a>
+          <Link href='/testimonials'>
+            <a>Testimonials</a>
+          </Link>
         </li>
         <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Gallery</a>
+          <Link href='/gallery'>
+            <a>Gallery</a>
+          </Link>
         </li>
         <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-          <a href="#">Contact</a>
+          <Link href='/Services'>
+            <a>Services</a>
+          </Link>
+        </li>
+        <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+          <Link href='/contact'>
+            <a>Contact</a>
+          </Link>
         </li>
         <li className={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
           <a className="c-navbar__action-link"href="#">Sign In</a>
@@ -78,10 +95,14 @@ class Navbar extends Component {
           <a href="#">Shop</a>
         </div>
         <div className="c-navbar__actions-signIn">
-          <a href="#">Sign In</a>
+          <Link href='http://localhost:3001'>
+            <a>Sign In</a>
+          </Link>
         </div>
         <div className="c-navbar__actions-checkout">
-          <a href="#"><i className="fas fa-shopping-basket"></i></a>
+          <Link href='/'>
+            <a><i className="fas fa-shopping-basket"></i></a>
+          </Link>
         </div>
       </div>
     </div>  

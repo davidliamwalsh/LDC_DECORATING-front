@@ -1,5 +1,8 @@
 .c-footer--lower {
-
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1em;
+  
   &__container {
     display: flex;
     flex-direction: column;
@@ -16,7 +19,7 @@
     padding: .5em 0 1em 0;
 
     &--item {
-      font-weight: bold;
+      font-weight: 100;
       border-right: 1px solid $white;
       margin-right: .5em;
       padding-right: .8em;
@@ -33,7 +36,8 @@
 
 @media screen and (min-width: $desktop-break) {
   .c-footer--lower {
-
+    padding: 0;
+    
     &__container {
       flex-direction: row;
       align-items: baseline;

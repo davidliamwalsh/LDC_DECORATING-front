@@ -40,7 +40,7 @@ class NewsArticleFooter extends Component {
                   </div>
                   <div className="c-footer--upper__list--item__news-article--main">
                     <h5 className="c-footer--upper__list--item__news-article--main__title">{newsArticle.title}</h5>
-                    <h5 className="c-footer--upper__list--item__news-article--main__body">{newsArticle.body}</h5>
+                    <h5 className="c-footer--upper__list--item__news-article--main__body c-footer--upper__list--item-lineheight">{newsArticle.body}</h5>
                   </div>
                 </div>
               </li>

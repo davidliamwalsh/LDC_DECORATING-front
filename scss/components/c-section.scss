@@ -1,0 +1,21 @@
+.c-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: $desktop-break) {
+  .c-section {
+    padding: 1em 0;
+  }
+}

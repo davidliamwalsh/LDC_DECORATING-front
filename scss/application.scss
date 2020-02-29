@@ -3,9 +3,16 @@
 @import 'base/base';
 
 @import 'components/c-containers';
+@import 'components/c-head';
 @import 'components/c-navbar';
 @import 'components/c-header';
+@import 'components/c-testimonial';
+@import 'components/c-section';
+@import 'components/c-testimonialCard';
 @import 'components/c-accreditations';
 @import 'components/c-footer--upper';
 @import 'components/c-footer--lower';
 @import 'components/c-gallery';
+
+@import 'objects/o-line';
+@import 'objects/o-btn';

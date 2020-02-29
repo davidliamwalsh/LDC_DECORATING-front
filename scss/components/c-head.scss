@@ -1,0 +1,20 @@
+.c-head--intro {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: $lightgrey;
+  line-height: 1.6;
+  padding: 2em 0;
+  
+  &__title {
+   padding: .5em 1em;
+   font-size: 18px;
+   font-weight: 400;
+  }
+  &__inset {
+    padding: .5em 1em;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
