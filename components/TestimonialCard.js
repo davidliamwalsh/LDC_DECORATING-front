@@ -37,9 +37,9 @@ class TestimonialCard extends Component {
     return <Query query={this.TESTIMONIALS_QUERY}>
       {({ loading, data }) => {
         if (loading) {
-          return <>
+          return (
             <p>Loading...</p>
-          </>
+          )
         } else {
           return <>
             <div className="c-testimonialCard">

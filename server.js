@@ -33,6 +33,14 @@ app.prepare()
     return app.render(req, res, '/gallery', req.query)
   })
 
+  server.get('/services', (req, res) => {
+    return app.render(req, res, '/services', req.query)
+  })
+
+  server.get('/careers', (req, res) => {
+    return app.render(req, res, '/careers', req.query)
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res)
   })

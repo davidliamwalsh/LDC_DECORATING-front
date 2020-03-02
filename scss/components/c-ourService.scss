@@ -28,7 +28,7 @@
   &__main {
     display: grid;
     grid-template-columns: auto;
-
+    
     &--item {
       display: grid;
       grid-template-columns: 50px auto;
@@ -37,7 +37,7 @@
       line-height: 135%;
 
       &-image {
-        .fas {
+        span {
           font-size: 40px;
           color: $success;
         }
@@ -61,6 +61,7 @@
 @media screen and (min-width: $tablet-break) {
   .c-ourService__main {
     grid-template-columns: auto auto auto;
+    grid-gap: 1em;
   }
 }
 
