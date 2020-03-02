@@ -1,20 +1,24 @@
 .c-navbar {
   height: 10vh;
-  background: $dark;
+  background: linear-gradient(black, transparent);
   position: relative;
+  width: 100%;
+  z-index: 9;
 
   &-active {
-    background: $dark;
+    position: absolute;
   }
 
   &__logo {
     position: absolute;
-    left: 5%;
+    left: 2em;
     top: 50%;
-    transform: translate(-5%, -50%);
+    width: 200px;
+    transform: translate(0%, -50%);
 
-    img {
-      width: 50px;
+    a {
+      color: $white;
+      letter-spacing: 2px;
     }
   }
 
@@ -29,7 +33,7 @@
   &__burger {
     position: absolute;
     cursor: pointer;
-    right: 5%;
+    right: 2em;
     top: 50%;
     transform: translate(-5%, -50%);
     z-index: 9;
@@ -60,6 +64,7 @@
     }
 
     &-top {
+      width: 25px;
       transition: all 0.3s ease-in-out;
       transform: rotate(-140deg) translateY(-11px) translateX(-7px);
     }
@@ -70,7 +75,7 @@
     &-bottom {
       transition: all 0.3s ease-in-out;
       transform: rotate(140deg) translateY(6px) translateX(-3px);
-      width: 35px;
+      width: 25px;
     }
   }
   
@@ -81,7 +86,6 @@
     align-items: center;
     margin-left: auto;
     position: fixed;
-    background: $dark;
     height: 100vh;
     width: 100%;
     flex-direction: column;
@@ -137,12 +141,12 @@
   &--open {
     left: 0vh;
     pointer-events: all;
+    background: $dark;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .c-navbar {
-    width: 100%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     align-items: center;
@@ -162,8 +166,14 @@
       a {
         color: $white;
         font-size: 16px;
-        padding: 0 1vw;
       }
+      
+      &-shop {
+        a {
+          padding: 0 1vw;
+        }
+      }
+
       .fas {
         color: $white;
       }
