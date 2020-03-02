@@ -139,6 +139,7 @@
   }
 
   &--open {
+    top: 0;
     left: 0vh;
     pointer-events: all;
     background: $dark;

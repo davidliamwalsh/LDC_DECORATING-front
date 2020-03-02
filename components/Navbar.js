@@ -41,6 +41,7 @@ class Navbar extends Component {
   }
 
   render () {
+
     return (
       <div className={`c-navbar ${this.renderTransparantNavBar()}`}>
         <div className="c-navbar__logo">
@@ -60,8 +61,13 @@ class Navbar extends Component {
             </Link>
           </li>
           <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-            <Link href='/about'>
-              <a>About</a>
+            <Link href='/services'>
+              <a>Services</a>
+            </Link>
+          </li>
+          <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+            <Link href='/sectors'>
+              <a>Sectors</a>
             </Link>
           </li>
           <li className={`c-navbar__link ${this.addFadeMenu()}`}>
@@ -75,8 +81,8 @@ class Navbar extends Component {
             </Link>
           </li>
           <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-            <Link href='/Services'>
-              <a>Services</a>
+            <Link href='/about'>
+              <a>About</a>
             </Link>
           </li>
           <li className={`c-navbar__link ${this.addFadeMenu()}`}>
@@ -85,7 +91,7 @@ class Navbar extends Component {
             </Link>
           </li>
           <li className={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
-            <a className="c-navbar__action-link"href="#">Sign In</a>
+            <a className="c-navbar__action-link"href="http://localhost:3001/admin">Sign In</a>
             <a className="c-navbar__action-link"href="#"><i className="fas fa-shopping-basket"></i></a>
           </li>
         </div>
@@ -97,7 +103,7 @@ class Navbar extends Component {
             </Link>
           </div>
           <div className="c-navbar__actions-signIn">
-            <Link href='http://localhost:3001'>
+            <Link href='http://localhost:3001/admin'>
               <a>Sign In</a>
             </Link>
           </div>
