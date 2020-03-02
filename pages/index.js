@@ -42,7 +42,6 @@ class Index extends Component {
         <hr />
       </div>
       <Accreditations />
-
     </Layout>
   }
 }

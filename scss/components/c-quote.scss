@@ -1,0 +1,55 @@
+.c-quote {
+  width: 100%;
+  height: auto;
+  background: $xlightgrey;
+  position: relative;
+  margin-bottom: 2em;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+
+    &--text {
+      padding: .5em 0;
+      text-align: center;
+      color: $lightgrey;
+    }
+
+    &--button {
+      padding: 1em;
+      margin: .5em 0;
+      color: $success;
+      border: 2px solid $success;
+      background: transparent;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-break) {
+  .c-quote {
+    &__item {
+      display: flex;
+      flex-direction: row;
+      padding: 1em 0;
+      width: 85%;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+  
+      &--text {
+        padding: .5em 1em;
+      }
+  
+      &--button {
+        margin: .5em 1em;
+      }
+    }
+  }
+}

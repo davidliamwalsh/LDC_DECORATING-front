@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import HeaderIntro from '../components/HeaderIntro'
 import Header from '../components/Header'
+import Quote from '../components/Quote'
 import Footer from '../components/Footer'
 import '../scss/application.scss'
 import AOS from 'aos';
@@ -27,6 +28,7 @@ class Layout extends Component {
       <HeaderIntro />
       <Header />
         { this.props.children }
+      <Quote />
       <Footer />
       <script src="https://unpkg.com/aos@next/dist/aos.js" />
     </>
