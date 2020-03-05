@@ -1,4 +1,4 @@
-.c-testimonialCard {
+.c-testimonial-card {
   max-width: 1000px;
   margin: auto;
   color: $lightgrey;
@@ -41,7 +41,7 @@
 }
 
 @media screen and (min-width: $tablet-break) {
-  .c-testimonialCard {
+  .c-testimonial-card {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 2em;
@@ -49,7 +49,7 @@
 }
 
 @media screen and (min-width: $desktop-break) {
-  .c-testimonialCard {
+  .c-testimonial-card {
     padding: 1em 0;
   }
 }

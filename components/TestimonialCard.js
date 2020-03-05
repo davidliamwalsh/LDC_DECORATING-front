@@ -42,17 +42,17 @@ class TestimonialCard extends Component {
           )
         } else {
           return <>
-            <div className="c-testimonialCard">
+            <div className="c-testimonial-card">
               {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
-                return <div key={index} className="c-testimonialCard__container">
-                  <div className="c-testimonialCard__image">
-                    <img className="c-testimonialCard__image--hero" src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
+                return <div key={index} className="c-testimonial-card__container">
+                  <div className="c-testimonial-card__image">
+                    <img className="c-testimonial-card__image--hero" src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
                   </div>
-                  <div className="c-testimonialCard__main">
-                    <h5 className="c-testimonialCard__main--body">{this.truncate(testimonial.body)}</h5>
-                    <h5 className="c-testimonialCard__main--date">{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
+                  <div className="c-testimonial-card__main">
+                    <h5 className="c-testimonial-card__main--body">{this.truncate(testimonial.body)}</h5>
+                    <h5 className="c-testimonial-card__main--date">{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
                     <hr className="o-line__testimonial" />
-                    <h5 className="c-testimonialCard__main--title">{testimonial.title}</h5>
+                    <h5 className="c-testimonial-card__main--title">{testimonial.title}</h5>
                   </div>
                 </div>
               })}

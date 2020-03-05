@@ -3,6 +3,7 @@ import { withRouter } from 'next/router'
 import Navbar from './Navbar'
 import Slider from "react-slick"
 import Banner from './Banner'
+
 class Header extends Component {
   render () {
 

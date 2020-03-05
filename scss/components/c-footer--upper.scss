@@ -15,6 +15,10 @@
       justify-content: space-between;
       align-items: center;
 
+      hr {
+        display: none;
+      }
+
       &-title {
         color: $white;
         font-weight: 400;
@@ -108,8 +112,15 @@
       border: none;
 
       &--head {
+        align-items: flex-start;
+        flex-direction: column;
+        
         &-title {
           font-size: 19px;
+        }
+
+        hr {
+          display: block;
         }
   
         &-btn {
