@@ -1,0 +1,68 @@
+.c-contact-form {
+  position: relative;
+
+  &__container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+  }
+
+  &__name {
+    &--label {
+      position: relative;
+    }
+    &--input {
+      position: relative;
+    }
+  }
+
+  &__email {
+    &--label {
+      position: relative;
+    }
+    &--input {
+      position: relative;
+    }
+  }
+
+  &__body {
+    &--label {
+      position: relative;
+    }
+    &--input {
+      position: relative;
+    }
+  }
+
+  &__submit {
+    position: relative;
+    background: $success;
+    color: $white;
+    padding: 1em 2em;
+    text-transform: uppercase;
+  }
+}
+
+
+.width {
+  max-width: 1000px;
+}
+.left {
+  text-align: left;
+}
+
+@media screen and (min-width: $desktop-break) {
+  .c-contact-form__container {
+    padding: 1em 0;
+  }
+}

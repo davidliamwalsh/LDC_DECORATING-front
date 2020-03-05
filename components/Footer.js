@@ -38,6 +38,7 @@ class Footer extends Component {
           <div className="c-footer--upper__list">
             <div className="c-footer--upper__list--head">
               <h4 className="c-footer--upper__list--head-title">HEADER</h4>
+              <hr className="o-line__testimonial" />
               <span className="c-footer--upper__list--head-btn" onClick={this.footerClickFirst}>+</span>
             </div>
             <div className={`c-footer--upper__list--body ${this.renderFooterListFirst()}`}>
@@ -62,6 +63,7 @@ class Footer extends Component {
           <div className="c-footer--upper__list">
             <div className="c-footer--upper__list--head">
               <h4 className="c-footer--upper__list--head-title">Services</h4>
+              <hr className="o-line__testimonial" />
               <span className="c-footer--upper__list--head-btn" onClick={this.footerClickSecond}>+</span>
             </div>
             <div className={`c-footer--upper__list--body ${this.renderFooterListSecond()}`}>
@@ -86,6 +88,7 @@ class Footer extends Component {
           <div className="c-footer--upper__list">
             <div className="c-footer--upper__list--head">
               <h4 className="c-footer--upper__list--head-title">Latest News</h4>
+              <hr className="o-line__testimonial" />
             </div>
             <div className={`c-footer--upper__list--body footer-item-active`}>
               <NewsArticleFooter newsArticleSize={3} />
@@ -95,6 +98,7 @@ class Footer extends Component {
           <div className="c-footer--upper__list">
             <div className="c-footer--upper__list--head">
               <h4 className="c-footer--upper__list--head-title">Contact</h4>
+              <hr className="o-line__testimonial" />
             </div>
             <div className={`c-footer--upper__list--body footer-item-active`}>
               <li className="c-footer--upper__list--item c-footer--upper__list--item-lineheight">
@@ -121,32 +125,32 @@ class Footer extends Component {
             <div className="c-footer--lower__list">
               <li className="c-footer--lower__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Privacy Policy</a>
                 </Link>
               </li>
               <li className="c-footer--lower__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Use of Cookies</a>
                 </Link>
               </li>
               <li className="c-footer--lower__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Terms of Use</a>
                 </Link>
               </li>
               <li className="c-footer--lower__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Refunds</a>
                 </Link>
               </li>
               <li className="c-footer--lower__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Legal</a>
                 </Link>
               </li>
               <li className="c-footer--lower__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Site Map</a>
                 </Link>
               </li>
             </div>
