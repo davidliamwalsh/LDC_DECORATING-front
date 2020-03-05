@@ -1,0 +1,57 @@
+.c-service-sector--grid {
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+  position: relative;
+  margin-bottom: 2em;
+  &__item {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    height: 400px;
+
+    &--title {
+      h2 {
+        color: $darkgrey;
+        font-size: 22px;
+        font-weight: 400;
+      }
+    }
+    &--wall-coverings {
+      background: url(/static/1.jpg);
+    }
+
+    &--image {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 300px;
+    }
+    
+    &--footer {
+      h4 {
+        text-transform: uppercase;
+        color: $lightgrey;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-break) {
+  .c-service-sector--grid {
+    grid-template-columns: auto auto;
+    grid-gap: 2em 1em;
+  }
+}
+@media screen and (min-width: $laptop-break) {
+  .c-service-sector--grid {
+    padding: 1em 0;
+    grid-gap: 3em 2em;
+  }
+}
