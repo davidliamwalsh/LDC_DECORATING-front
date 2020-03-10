@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import withData from '../lib/withData'
 import OurService from '../components/OurService'
-import TestimonialCard from '../components/TestimonialCard'
+import TestimonialPage from '../components/TestimonialPage'
 import Accreditations from '../components/Accreditations'
 import Layout from '../components/Layout'
 import Link from 'next/link'
@@ -28,7 +28,7 @@ class Index extends Component {
       <div className="o-section__line">
         <hr />
       </div>
-      <TestimonialCard testimonialSize={4} />
+      <TestimonialPage testimonialSize={3} />
 
       <div className="o-section">
         <h4 className="o-section__title">
