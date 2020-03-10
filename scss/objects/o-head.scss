@@ -1,0 +1,26 @@
+.o-head--intro {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  color: $lightgrey;
+  line-height: 1.6;
+  padding: 2em 1em;
+  
+  &__title {
+   padding: .5em 0;
+   font-size: 18px;
+   font-weight: 400;
+  }
+  &__inset {
+    padding: .5em 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+
+@media screen and (min-width: $desktop-break) {
+  .o-head--intro {
+    padding: 2em 0;
+  }
+}

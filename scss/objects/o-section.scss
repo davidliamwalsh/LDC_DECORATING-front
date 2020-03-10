@@ -1,0 +1,31 @@
+.o-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1em;
+  }
+}
+
+@media screen and (min-width: $desktop-break) {
+  .o-section {
+    padding: 1em 0;
+
+    &__line {
+      padding: 0;
+    }
+  }
+}
