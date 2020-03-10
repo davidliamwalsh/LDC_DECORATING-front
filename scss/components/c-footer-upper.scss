@@ -1,4 +1,4 @@
-.c-footer--upper {
+.c-footer-upper {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
@@ -103,7 +103,7 @@
 }
 
 @media screen and (min-width: $tablet-break) {
-  .c-footer--upper {
+  .c-footer-upper {
     display: grid;
     grid-template-columns: 1fr 1fr 30% 30%;
     grid-gap: 1em;
@@ -144,7 +144,7 @@
 }
 
 @media screen and (min-width: $desktop-break) {
-  .c-footer--upper {
+  .c-footer-upper {
     padding: 1em 0;
   }
 }

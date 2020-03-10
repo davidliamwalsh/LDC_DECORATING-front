@@ -91,7 +91,7 @@ class Navbar extends Component {
             </Link>
           </li>
           <li className={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
-            <a className="c-navbar__action-link"href="http://localhost:3001/admin">Sign In</a>
+            <a className="c-navbar__action-link" href={`${process.env.BACKEND_URL}/admin`}>Sign In</a>
             <a className="c-navbar__action-link"href="#"><i className="fas fa-shopping-basket"></i></a>
           </li>
         </div>
@@ -103,7 +103,7 @@ class Navbar extends Component {
             </Link>
           </div>
           <div className="c-navbar__actions-signIn">
-            <Link href='http://localhost:3001/admin'>
+            <Link href={`${process.env.BACKEND_URL}/admin`}>
               <a>Sign In</a>
             </Link>
           </div>
