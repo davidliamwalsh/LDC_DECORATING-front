@@ -14,7 +14,7 @@ class OurService extends Component {
             <hr />
           </div>
           <div className="c-our-service__main">
-            <div className="c-our-service__main--item">
+            <div className="c-our-service__main--item" data-aos="fade">
               <div className="c-our-service__main--item-image">
                 <span><FontAwesomeIcon icon={faCheckCircle} /></span>
               </div>
@@ -23,7 +23,7 @@ class OurService extends Component {
                 <p className="c-our-service__main--item-main__description">Our flexible approach means we adapt to your requirements, whether that’s working out of hours or on weekend, whatever it takes to get the job done. We firmly believe that in doing our job, our aim is not interfere with you doing yours.</p>
               </div>
             </div>
-            <div className="c-our-service__main--item">
+            <div className="c-our-service__main--item" data-aos="fade" data-aos-delay="200">
               <div className="c-our-service__main--item-image">
                 <span><FontAwesomeIcon icon={faCheckCircle} /></span>
               </div>
@@ -32,7 +32,7 @@ class OurService extends Component {
                 <p className="c-our-service__main--item-main__description">Full range of commercial painting services for both internal and external projects. From the use of specialist and protective paints, to cladding restoration, wide vinyl hanging, render and plastering.</p>
               </div>
             </div>
-            <div className="c-our-service__main--item">
+            <div className="c-our-service__main--item" data-aos="fade" data-aos-delay="400">
               <div className="c-our-service__main--item-image">
                 <span><FontAwesomeIcon icon={faCheckCircle} /></span>
               </div>

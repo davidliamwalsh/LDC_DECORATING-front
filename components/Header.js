@@ -22,7 +22,7 @@ class Header extends Component {
           <Slider {...settings}>
             <div>
               <div className="c-header__slider--image">
-              <div className="c-header__slider--image-container">
+              <div className="c-header__slider--image-container" data-aos="fade-up">
                 <div className="c-header__slider--image-title c-header__slider--image-item">
                   <h2 className="c-header__slider--image-item__text">Commercial Refurbishment</h2>
                 </div>
@@ -34,7 +34,7 @@ class Header extends Component {
             </div>
             <div>
               <div className="c-header__slider--image">
-                <div className="c-header__slider--image-container">
+                <div className="c-header__slider--image-container" data-aos="fade-up">
                   <div className="c-header__slider--image-title c-header__slider--image-item">
                     <h2 className="c-header__slider--image-item__text">Commercial Refurbishment</h2>
                   </div>

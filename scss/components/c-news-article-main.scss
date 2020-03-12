@@ -1,0 +1,127 @@
+.c-news-article-main {  
+  margin: auto;
+  background: $xlightgrey;
+  color: $darkgrey;
+  width: 100%;
+
+  &__head {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+
+    &--text {
+      font-size: 24px;
+      font-weight: 400;
+    }
+    &--line {
+      margin: 1em 0;
+    }
+  }
+
+  &__container {
+    max-width: 1000px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin: auto;
+    padding: 0 1em 2em 1em;
+  }
+
+  &__item {
+    position: relative;
+    background: $white;
+    
+    &--inner {
+
+      &-date {
+        position: absolute;
+        border: 2px solid $success;
+        width: 30px;
+        height: 30px;
+        background: $white;
+        top: 10px;
+        left: -10px;
+        display: flex;
+        align-items: center;
+
+        &__text {
+          text-align: center;
+          font-size: 10px;
+          font-weight: 400;
+          color: $success;
+        }
+      }
+
+      &-news {
+        &__image {
+          &_hero {
+            width: 100%;
+          }
+        }
+
+        &__main {
+          padding: .5em;
+          text-align: center;
+        }
+
+        &__title {
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        &__hr {
+          width: 20%;
+          margin: .5em auto;
+        }
+
+        &__body {
+          font-size: 14px;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablet-break) {
+  .c-news-article-main {
+
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-break) {
+  .c-news-article-main {
+
+    &__head {
+      padding: 1em 0;
+    }
+
+    &__container {
+      padding: 0 0 2em 0;
+      grid-gap: 2em;
+    }
+
+    &__item--inner {
+      &-date {
+        width: 40px;
+        height: 40px;
+  
+        &__text {
+          font-size: 12px;
+        }
+      }
+
+      &-news {
+        &__title {
+          font-size: 18px;
+        }
+        &__body {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
