@@ -49,7 +49,7 @@ class Banner extends Component {
   render () {
     return <div className={`c-banner ${this.renderBannerServices()} ${this.renderBannerSectors()} ${this.renderBannerGallery()} ${this.renderBannerTestimonials()} ${this.renderBannerAbout()} ${this.renderBannerContact()}`}>
       <div className="c-banner__container">
-        <div className="c-banner__title">
+        <div className="c-banner__title" data-aos="fade-up">
           <h2 className={`c-banner__title--sectors ${this.renderBannerSectorsTitle()}`}>Sectors</h2>
           <h2 className={`c-banner__title--services ${this.renderBannerServicesTitle()}`}>Services</h2>
           
