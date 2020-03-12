@@ -14,7 +14,8 @@ class Layout extends Component {
   }
   componentDidMount(){
     AOS.init({
-      duration : 2000
+      duration : 2000,
+      offset: 10
     })
   }
   render () {
