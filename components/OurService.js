@@ -38,7 +38,7 @@ class OurService extends Component {
               </div>
               <div className="c-our-service__main--item-main">
                 <h4 className="c-our-service__main--item-main__title">title</h4>
-                <p className="c-our-service__main--item-main__description">Greens is the decorating contractor of choice for many large organisations, councils and main contractors with over 30 years proven history for exemplary levels of workmanship and service.</p>
+                <p className="c-our-service__main--item-main__description">LDC Decorating Contractors is the decorating contractor of choice for many large organisations, councils and main contractors with over 30 years proven history for exemplary levels of workmanship and service.</p>
               </div>
             </div>
           </div>
