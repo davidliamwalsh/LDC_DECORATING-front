@@ -39,6 +39,30 @@ app.prepare()
     return app.render(req, res, '/services', req.query)
   })
 
+  server.get('/services/painting', (req, res) => {
+    return app.render(req, res, '/services/painting', req.query)
+  })
+
+  server.get('/services/decorative-coatings', (req, res) => {
+    return app.render(req, res, '/services/decorative-coatings', req.query)
+  })
+
+  server.get('/services/protective-coatings', (req, res) => {
+    return app.render(req, res, '/services/protective-coatings', req.query)
+  })
+
+  server.get('/services/internal-external-paint-spray', (req, res) => {
+    return app.render(req, res, '/services/internal-external-paint-spray', req.query)
+  })
+
+  server.get('/services/cladding-restoration', (req, res) => {
+    return app.render(req, res, '/services/cladding-restoration', req.query)
+  })
+
+  server.get('/services/rendering-plastering', (req, res) => {
+    return app.render(req, res, '/services/rendering-plastering', req.query)
+  })
+
   server.get('/contact', (req, res) => {
     return app.render(req, res, '/contact', req.query)
   })

@@ -52,7 +52,12 @@
 }
 @media screen and (min-width: $laptop-break) {
   .c-service-sector--grid {
-    padding: 1em 0;
     grid-gap: 3em 2em;
+  }
+}
+
+@media screen and (min-width: $desktop-break) {
+  .c-service-sector--grid {
+    padding: 1em 0;
   }
 }
