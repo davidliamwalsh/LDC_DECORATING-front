@@ -35,6 +35,22 @@ app.prepare()
     return app.render(req, res, '/sectors', req.query)
   })
 
+  server.get('/sectors/schools', (req, res) => {
+    return app.render(req, res, '/sectors/schools', req.query)
+  })
+
+  server.get('/sectors/factories-industrial', (req, res) => {
+    return app.render(req, res, '/sectors/factories-industrial', req.query)
+  })
+
+  server.get('/sectors/offices', (req, res) => {
+    return app.render(req, res, '/sectors/offices', req.query)
+  })
+
+  server.get('/sectors/retail-shops', (req, res) => {
+    return app.render(req, res, '/sectors/retail-shops', req.query)
+  })
+
   server.get('/services', (req, res) => {
     return app.render(req, res, '/services', req.query)
   })

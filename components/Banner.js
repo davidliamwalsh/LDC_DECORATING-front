@@ -95,6 +95,38 @@ class Banner extends Component {
     return this.props.router.pathname === '/services/cladding-restoration' ? 'c-banner__active' : ''
   }
 
+  renderBannerSectorsFactoriesIndustrial () {
+    return this.props.router.pathname === '/sectors/factories-industrial' ? 'c-banner__sectors c-banner__image' : ''
+  }
+
+  renderBannerSectorsFactoriesIndustrialTitle () {
+    return this.props.router.pathname === '/sectors/factories-industrial' ? 'c-banner__active' : ''
+  }
+
+  renderBannerSectorsOffice () {
+    return this.props.router.pathname === '/sectors/offices' ? 'c-banner__sectors c-banner__image' : ''
+  }
+
+  renderBannerSectorsOfficeTitle () {
+    return this.props.router.pathname === '/sectors/offices' ? 'c-banner__active' : ''
+  }
+
+  renderBannerSectorsRetailShop () {
+    return this.props.router.pathname === '/sectors/retail-shops' ? 'c-banner__sectors c-banner__image' : ''
+  }
+
+  renderBannerSectorsRetailShopTitle () {
+    return this.props.router.pathname === '/sectors/retail-shops' ? 'c-banner__active' : ''
+  }
+
+  renderBannerSectorsSchools () {
+    return this.props.router.pathname === '/sectors/schools' ? 'c-banner__sectors c-banner__image' : ''
+  }
+
+  renderBannerSectorsSchoolsTitle () {
+    return this.props.router.pathname === '/sectors/schools' ? 'c-banner__active' : ''
+  }
+
   render () {
     return <div className={`
     c-banner 
@@ -110,6 +142,10 @@ class Banner extends Component {
     ${this.renderBannerServicesProtectiveCoatings()}
     ${this.renderBannerServicesRenderingPlastering()}
     ${this.renderBannerServicesCladdingRestoration()}
+    ${this.renderBannerSectorsFactoriesIndustrial()}
+    ${this.renderBannerSectorsOffice()}
+    ${this.renderBannerSectorsRetailShop()}
+    ${this.renderBannerSectorsSchools()}
     `}>
       <div className="c-banner__container">
         <div className="c-banner__title" data-aos="zoom-in">
@@ -146,6 +182,18 @@ class Banner extends Component {
           </h2>
           <h2 className={`c-banner__title--about ${this.renderBannerServicesRenderingPlasteringTitle()}`}>
             Rendering &amp; Plastering
+          </h2>
+          <h2 className={`c-banner__title--about ${this.renderBannerSectorsFactoriesIndustrialTitle()}`}> 
+            Industrial
+          </h2>
+          <h2 className={`c-banner__title--about ${this.renderBannerSectorsOfficeTitle()}`}> 
+            Office Decorating
+          </h2>
+          <h2 className={`c-banner__title--about ${this.renderBannerSectorsRetailShopTitle()}`}>
+            Retail Refurbishment
+          </h2>
+          <h2 className={`c-banner__title--about ${this.renderBannerSectorsSchoolsTitle()}`}> 
+            Schools
           </h2>
           <hr className="c-banner__title--line" />
         </div>
