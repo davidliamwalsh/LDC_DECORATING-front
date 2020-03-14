@@ -10,7 +10,7 @@ class SectorsGrid extends Component {
             <h2>Retail &amp; Shop Fitting</h2>
             <hr className="o-line" />
           </div>
-          <Link href='/sectors/retail-shop'>
+          <Link href='/sectors/retail-shops'>
             <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
@@ -49,7 +49,7 @@ class SectorsGrid extends Component {
             <h2>Office Space</h2>
             <hr className="o-line" />
           </div>
-          <Link href='/sectors/office'>
+          <Link href='/sectors/offices'>
             <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
