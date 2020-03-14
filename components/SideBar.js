@@ -52,26 +52,26 @@ class SideBar extends Component {
         <hr className="o-line" />
         <li className="c-service-sector-table__main--sidebar--list-item">
           <span className="c-service-sector-table__main--sidebar--list-item__icon"><FontAwesomeIcon icon={faChevronRight} /></span>
-          <Link href='/services/decorative-coatings'>
-            <a>Decorative Coatings</a>
+          <Link href='/sectors/schools'>
+            <a>Schools &amp; Education</a>
           </Link>
         </li>
         <li className="c-service-sector-table__main--sidebar--list-item">
           <span className="c-service-sector-table__main--sidebar--list-item__icon"><FontAwesomeIcon icon={faChevronRight} /></span>
-          <Link href='/services/protective-coatings'>
-            <a>Protective &amp; Specialist Coatings</a>
+          <Link href='/sectors/retail-shops'>
+            <a>Retail &amp; Fit Outs</a>
           </Link>
         </li>
         <li className="c-service-sector-table__main--sidebar--list-item">
           <span className="c-service-sector-table__main--sidebar--list-item__icon"><FontAwesomeIcon icon={faChevronRight} /></span>
-          <Link href='/services/internal-external-paint-spray'>
-            <a>Internal &amp; External Paint Spray</a>
+          <Link href='/sectors/factories-industrial'>
+            <a>Industrial</a>
           </Link>
         </li>
         <li className="c-service-sector-table__main--sidebar--list-item">
           <span className="c-service-sector-table__main--sidebar--list-item__icon"><FontAwesomeIcon icon={faChevronRight} /></span>
-          <Link href='/services/painting'>
-            <a>Painting</a>
+          <Link href='/sectors/offices'>
+            <a>Office</a>
           </Link>
         </li>
         <li className="c-service-sector-table__main--sidebar--list-item">
