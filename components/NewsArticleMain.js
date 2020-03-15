@@ -34,11 +34,15 @@ class NewsArticleMain extends Component {
           )
         } else {
           return <div className="c-news-article-main">
-            <div className="c-news-article-main__head">
-              <h4 className="c-news-article-main__head--text">Latest News</h4>
-              <hr className="c-news-article-main__head--line" />
+            <div className="o-section-head">
+              <h4 className="o-section-head__title">
+                Our Services
+              </h4>
             </div>
-            <div className="c-news-article-main__container">
+            <div className="o-section-head__line">
+              <hr />
+            </div>
+            <div className="c-container c-news-article-main__container">
               {data.newsArticles.slice(0, newsArticleSize).map((newsArticle, index) => {
                 return (
                   <li className="c-news-article-main__item" key={index} data-aos="flip-right">
