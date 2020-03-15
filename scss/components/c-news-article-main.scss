@@ -4,11 +4,12 @@
   color: $darkgrey;
   width: 100%;
 
-  &__container {
+  &__main {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
+    padding: 1em 0;
   }
 
   &__item {
@@ -37,8 +38,8 @@
       }
 
       &-news {
-        &__image {
-          &_hero {
+        &__hero {
+          &_image {
             width: 100%;
           }
         }
@@ -69,7 +70,7 @@
 @media screen and (min-width: $tablet-break) {
   .c-news-article-main {
 
-    &__container {
+    &__main {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -78,7 +79,7 @@
 @media screen and (min-width: $desktop-break) {
   .c-news-article-main {
 
-    &__container {
+    &__main {
       grid-gap: 2em;
     }
 

@@ -1,13 +1,38 @@
 import { Component } from 'react'
 import withData from '../lib/withData'
 import Layout from '../components/Layout'
+import KeyContactsGrid from '../components/KeyContactsGrid'
+import OperationalStaff from '../components/OperationalStaff'
 
 class About extends Component {
   render () {
     return <Layout>
       <div className="o-head--intro">
-        <h4 className="o-head--intro__title">Take a look at some of the feedback we have received from clients. In a customer service survey, 100% of respondents stated that they would recommend our service and use us again in the future.</h4>
-        <h5 className="o-head--intro__inset">Take a look at some of the feedback we have received from clients. In a customer service survey, 100% of respondents stated that they would recommend our service and use us again in the future.</h5>
+        <h4 className="o-head--intro__title">Established in 1984, Greens has grown into a leading regional contractor directly employing a skilled workforce of over fifty time served tradesmen operating primarily across the North of England.</h4>
+        <h5 className="o-head--intro__inset">TDespite our continued growth and expansion into new market sectors, our commitment to quality and customer service remains as strong as ever. Greens has built an enviable reputation as a firm that has the resources to competitively deal with contracts up to and in excess of one million pounds but at the same time, our customers can be confident that they are dealing with a family run business that genuinely cares about its reputation and takes pride in every job, big or small.
+        </h5>
+      </div>
+      <div className="o-section-head">
+        <h4 className="o-section-head__title">
+          Meet the Team
+        </h4>
+      </div>
+      <div className="o-section-head__line">
+        <hr />
+      </div>
+      
+      <div className="c-container">
+        <div className="c-about__section">
+          <h2 className="c-about__section--title">Key Contacts</h2>
+          <hr className="o-line" />
+        </div>
+        <KeyContactsGrid />
+
+        <div className="c-about__section">
+          <h2 className="c-about__section--title">Operational Staff</h2>
+          <hr className="o-line" />
+        </div>
+        <OperationalStaff />
       </div>
     </Layout>
   }
