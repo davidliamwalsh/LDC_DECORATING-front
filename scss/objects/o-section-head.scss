@@ -1,4 +1,4 @@
-.o-section {
+.o-section-head {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -22,7 +22,7 @@
 }
 
 @media screen and (min-width: $desktop-break) {
-  .o-section {
+  .o-section-head {
     padding: 1em 0;
 
     &__line {

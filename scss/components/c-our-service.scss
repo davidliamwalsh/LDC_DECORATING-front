@@ -6,12 +6,6 @@
   color: $darkgrey;
   margin-bottom: 2em;
 
-  &__container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 2em 1em 1em 1em;
-  }
-
   &__head {
     font-size: 24px;
     text-transform: uppercase;
@@ -62,13 +56,5 @@
   .c-our-service__main {
     grid-template-columns: auto auto auto;
     grid-gap: 1em;
-  }
-}
-
-@media screen and (min-width: $desktop-break) {
-  .c-our-service {
-    &__container {
-      padding: 2em 0 1em 0;
-    }
   }
 }

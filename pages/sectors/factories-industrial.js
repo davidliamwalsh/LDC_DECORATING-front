@@ -16,18 +16,20 @@ class SectorsFactoriesIndustrial extends Component {
     }
 
     return <Layout>
-      <div className="c-service-sector-table">
-        <div className="c-service-sector-table__main">
-          <div className="c-service-sector-table__main--primary">
-            <h2 className="c-service-sector-table__main--primary-title">Industrial Painting &amp; Refurbishments</h2>
-            <hr className="o-line" />
-            <p className="c-service-sector-table__main--primary-text">Greens are experienced in working in factories and industrial settings where not disrupting workflow may be imperative. We are able to work out of hours when required or to tight deadlines such as annual shut down periods.</p>
-            <p className="c-service-sector-table__main--primary-text">We regularly apply specialist coatings to internal surfaces such as machine enamel and hard wearing epoxy wall and floor paints. We are often required to carry out essential maintenance painting such as bay and line markings to factory floors which may experience high traffic and wear.</p>
-            <p className="c-service-sector-table__main--primary-text">Greens offer a comprehensive range of painting and decorating services to suit virtually all requirements including cladding and building painting where durability and guarantees are required. Take a look at the list of services that we offer for more details.</p>
-            <p className="c-service-sector-table__main--primary-text">Our team are fully accredited in all access methods and are capable of working in the most challenging heavy industrial environments.</p>
-          </div>
-          <div className="c-service-sector-table__main--sidebar">
-            <SideBar />
+      <div className="c-container">
+        <div className="c-service-sector-table">
+          <div className="c-service-sector-table__main">
+            <div className="c-service-sector-table__main--primary">
+              <h2 className="c-service-sector-table__main--primary-title">Industrial Painting &amp; Refurbishments</h2>
+              <hr className="o-line" />
+              <p className="c-service-sector-table__main--primary-text">Greens are experienced in working in factories and industrial settings where not disrupting workflow may be imperative. We are able to work out of hours when required or to tight deadlines such as annual shut down periods.</p>
+              <p className="c-service-sector-table__main--primary-text">We regularly apply specialist coatings to internal surfaces such as machine enamel and hard wearing epoxy wall and floor paints. We are often required to carry out essential maintenance painting such as bay and line markings to factory floors which may experience high traffic and wear.</p>
+              <p className="c-service-sector-table__main--primary-text">Greens offer a comprehensive range of painting and decorating services to suit virtually all requirements including cladding and building painting where durability and guarantees are required. Take a look at the list of services that we offer for more details.</p>
+              <p className="c-service-sector-table__main--primary-text">Our team are fully accredited in all access methods and are capable of working in the most challenging heavy industrial environments.</p>
+            </div>
+            <div className="c-service-sector-table__main--sidebar">
+              <SideBar />
+            </div>
           </div>
         </div>
       </div>
