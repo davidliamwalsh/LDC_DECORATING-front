@@ -3,16 +3,22 @@ import withData from '../lib/withData'
 import Layout from '../components/Layout'
 import ContactMap from '../components/ContactMap'
 import ContactForm from '../components/ContactForm'
+import Link from 'next/link'
 
 class Contact extends Component {
   render () {
     return <Layout>
       <ContactMap />
-      <div className="c-contact__message">
-        <h4 className="c-contact__message--title">Take a look at some of the feedback we have received from clients. In a customer service survey, 100% of respondents stated that they would recommend our service and use us again in the future.</h4>
-        <h5 className="c-contact__message--inset">Take a look at some of the feedback we have received from clients. In a customer service survey, 100% of respondents stated that they would recommend our service and use us again in the future.</h5>
+      <div className="o-head--intro">
+        <h5 className="o-head--intro__inset">If you have any questions about our services or would like to request a quote, then please fill out our contact form below.</h5>
+        <h5 className="o-head--intro__inset">Alternatively you can email us on 
+        <Link href='mailto:enquiries@ldcdecorating.co.uk'>
+          <a>enquiries@ldcdecorating.co.uk</a>
+        </Link>. We respond within 24 hours.</h5>
       </div>
+
       <ContactForm />
+      
     </Layout>
   }
 }

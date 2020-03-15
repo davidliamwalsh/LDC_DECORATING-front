@@ -6,11 +6,13 @@ class OurService extends Component {
   render () {
     return (
       <div className="c-our-service">
-        <div className="c-our-service__container">
-          <div className="c-our-service__head">
-            <h4>Our Service</h4>
+        <div className="c-container">
+          <div className="o-section-head">
+            <h4 className="o-section-head__title">
+              Our Services
+            </h4>
           </div>
-          <div className="c-our-service__line">
+          <div className="o-section-head__line">
             <hr />
           </div>
           <div className="c-our-service__main">

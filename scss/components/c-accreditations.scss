@@ -1,8 +1,4 @@
 .c-accreditations {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1em;
-
   &__items {
     display: grid;
     grid-template-columns: auto auto;
@@ -36,10 +32,5 @@
         width: 200px;
       }
     }
-  }
-}
-@media screen and (min-width: $desktop-break) {
-  .c-accreditations {
-    padding: 1em 0;
   }
 }

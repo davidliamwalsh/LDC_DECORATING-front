@@ -18,33 +18,38 @@ class Index extends Component {
       
       <OurService />
 
-      <div className="o-section">
-        <h4 className="o-section__title">
+      <div className="o-section-head">
+        <h4 className="o-section-head__title">
           Testimonials
         </h4>
         <Link href='/testimonials'>
           <a className="o-btn">View all</a>
         </Link>
       </div>
-      <div className="o-section__line">
+      <div className="o-section-head__line">
         <hr />
       </div>
-      <TestimonialPage testimonialSize={3} />
+      <div className="c-container">
+        <TestimonialPage testimonialSize={3} />
+      </div>
 
       <NewsArticleMain newsArticleSize={3} />
 
-      <div className="o-section">
-        <h4 className="o-section__title">
+      <div className="o-section-head">
+        <h4 className="o-section-head__title">
           Accreditations
         </h4>
         <Link href='/accreditations'>
           <a className="o-btn">View all</a>
         </Link>
       </div>
-      <div className="o-section__line">
+      <div className="o-section-head__line">
         <hr />
       </div>
-      <Accreditations />
+      <div className="c-container">
+        <Accreditations />
+      </div>
+      
     </Layout>
   }
 }

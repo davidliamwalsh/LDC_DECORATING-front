@@ -1,14 +1,10 @@
 .c-testimonial {
-  max-width: 1000px;
-  margin: auto;
   color: $lightgrey;
-  padding: 1em;
 
   &__container {
     display: grid;
     grid-template-columns: 100px auto;
     grid-gap: .5em;
-    padding: 1em 0;
     align-items: flex-start;
     font-style: italic; 
   }
@@ -45,11 +41,5 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 2em;
-  }
-}
-
-@media screen and (min-width: $desktop-break) {
-  .c-testimonial {
-    padding: 1em 0;
   }
 }

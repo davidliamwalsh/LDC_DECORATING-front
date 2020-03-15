@@ -1,0 +1,12 @@
+.o-grid-3-2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+@media screen and (min-width: $tablet-break) {
+  .o-grid-3-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

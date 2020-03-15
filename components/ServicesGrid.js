@@ -58,7 +58,7 @@ class ServicesGrid extends Component {
             <h2>Cladding Restoration</h2>
             <hr className="o-line" />
           </div>
-          <Link href='/services'>
+          <Link href='/services/cladding-restoration'>
             <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
@@ -70,7 +70,7 @@ class ServicesGrid extends Component {
             <h2>Rendering &amp; Plastering</h2>
             <hr className="o-line" />
           </div>
-          <Link href='/services'>
+          <Link href='/services/rendering-plastering'>
             <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">

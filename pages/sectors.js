@@ -9,7 +9,11 @@ class Sectors extends Component {
       <div className="o-head--intro">
         <h4 className="o-head--intro__title">With over thirty year’s experience working in virtually all commercial and industrial sectors, there is nobody better placed than Greens to assist you with your painting and decorating needs. Take a look at some of our case studies below.</h4>
       </div>
-      <SectorsGrid />
+
+      <div className="c-container">
+        <SectorsGrid />
+      </div>
+      
     </Layout>
   }
 }
