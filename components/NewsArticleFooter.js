@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import moment from 'moment'
+import Loader from 'react-loader-spinner'
 
 class NewsArticleFooter extends Component {
 
@@ -28,7 +29,15 @@ class NewsArticleFooter extends Component {
       {({ loading, data }) => {
         if (loading) {
           return (
-            <p>Loading...</p>
+            <div className="c-loader__container">
+              <Loader
+                type="ThreeDots"
+                color="#EEEEEE"
+                height={10}
+                width={150}
+                timeout={0}
+              />
+            </div>
           )
         } else {
           return <>
