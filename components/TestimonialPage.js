@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import moment from 'moment'
+import { Facebook } from 'react-content-loader'
 
 class TestimonialPage extends Component {
 
@@ -25,12 +26,15 @@ class TestimonialPage extends Component {
 
   render () {
     const { testimonialSize } = this.props
+    const MyFacebookLoader = () => <Facebook />
 
     return <Query query={this.TESTIMONIALS_QUERY}>
       {({ loading, data }) => {
         if (loading) {
           return (
-            <p>Loading...</p>
+            <div className="c-loader__container">
+              <MyFacebookLoader />
+            </div>
           )
         } else {
           return <>

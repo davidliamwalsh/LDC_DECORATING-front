@@ -3,6 +3,12 @@
   background: $dark;
 }
 
+.c-loader__container {
+  width: 90%;
+  margin: auto;
+  padding: 1em 0;
+}
+
 .c-container {
   max-width: 1000px;
   margin: auto;
