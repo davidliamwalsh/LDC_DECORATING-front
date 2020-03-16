@@ -18,7 +18,7 @@ class KeyContactsGrid extends Component {
           <hr className="c-about__grid_card--head-line" />
         </div>
         <div className="c-about__grid_card--text">
-          <p>As the founder of our company, David worked as a decorator for over 20 years before establishing Greens.</p>
+          <p>As the founder of our company, David worked as a decorator for over 20 years before establishing LDC Decorating Contractors.</p>
         </div>
         <div className="c-about__grid_card--links">
           <Link href=''>
@@ -40,7 +40,7 @@ class KeyContactsGrid extends Component {
           <hr className="c-about__grid_card--head-line" />
         </div>
         <div className="c-about__grid_card--text">
-          <p>As the founder of our company, David worked as a decorator for over 20 years before establishing Greens.</p>
+          <p>As the founder of our company, David worked as a decorator for over 20 years before establishing LDC Decorating Contractors.</p>
         </div>
         <div className="c-about__grid_card--links">
           <Link href='mailto:'>
@@ -62,7 +62,7 @@ class KeyContactsGrid extends Component {
           <hr className="c-about__grid_card--head-line" />
         </div>
         <div className="c-about__grid_card--text">
-          <p>As the founder of our company, David worked as a decorator for over 20 years before establishing Greens.</p>
+          <p>As the founder of our company, David worked as a decorator for over 20 years before establishing LDC Decorating Contractors.</p>
         </div>
         <div className="c-about__grid_card--links">
           <Link href='mailto:info@davidwalsh.co.uk'>
