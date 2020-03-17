@@ -123,6 +123,11 @@ class Footer extends Component {
               <p>Copyright &copy; 2020 LDC Decorating Contractors Ltd. All rights reserved.</p>
             </div>
             <div className="c-footer-lower__list">
+            <li className="c-footer-lower__list--item">
+                <Link href='/'>
+                  <a>Admin</a>
+                </Link>
+              </li>
               <li className="c-footer-lower__list--item">
                 <Link href='/'>
                   <a>Privacy Policy</a>
