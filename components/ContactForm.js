@@ -23,7 +23,7 @@ class ContactForm extends Component {
     const form = event.target
     const formData = {
       From: 'coding@davidwalsh.co.uk',
-      To: 'coding@davidwalsh.co.uk',
+      To: 'ldcdecoratingcontractors@davidwalsh.co.uk',
       ReplyTo: form.email.value,
       HtmlBody: form.body.value,
       Name: form.name.value
