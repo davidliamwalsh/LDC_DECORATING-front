@@ -26,8 +26,8 @@ class About extends Component {
           <h2 className="c-about__section--title">Key Contacts</h2>
           <hr className="o-line" />
         </div>
-        <KeyContactsGrid />
-
+        <KeyContactsGrid userSize={10} />
+        
         <div className="c-about__section">
           <h2 className="c-about__section--title">Operational Staff</h2>
           <hr className="o-line" />
