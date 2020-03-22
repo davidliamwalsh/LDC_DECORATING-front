@@ -56,10 +56,10 @@ class KeyContactsGridTest extends Component {
                     <p>{user.body}</p>
                   </div>
                   <div className="c-about__grid_card--links">
-                    <Link href=''>
+                    <Link href={`mailto:${user.email}`}>
                       <a><FontAwesomeIcon icon={faAt} /></a>
                     </Link>
-                    <Link href='mailto:'>
+                    <Link href={`${user.linkedin}`}>
                       <a><FontAwesomeIcon icon={faLinkedinIn} /></a>
                     </Link>
                   </div>

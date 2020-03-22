@@ -27,10 +27,6 @@ app.prepare()
     return app.render(req, res, '/testimonials', req.query)
   })
 
-  server.get('/gallery', (req, res) => {
-    return app.render(req, res, '/gallery', req.query)
-  })
-
   server.get('/sectors', (req, res) => {
     return app.render(req, res, '/sectors', req.query)
   })
