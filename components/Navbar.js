@@ -76,11 +76,6 @@ class Navbar extends Component {
             </Link>
           </li>
           <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-            <Link href='/gallery'>
-              <a>Gallery</a>
-            </Link>
-          </li>
-          <li className={`c-navbar__link ${this.addFadeMenu()}`}>
             <Link href='/about'>
               <a>About</a>
             </Link>

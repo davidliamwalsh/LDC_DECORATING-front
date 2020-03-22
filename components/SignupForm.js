@@ -4,7 +4,7 @@ class SignupForm extends Component {
   render () {
     return <>
       <div className="c-signup">
-        <form action="https://herokuapp.us19.list-manage.com/subscribe/post?u=a494df16f52fd1ec8d254d485&amp;id=1c365dac98" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate c-signup__form" target="_blank" novalidate>
+        <form action="https://herokuapp.us19.list-manage.com/subscribe/post?u=a494df16f52fd1ec8d254d485&amp;id=1c365dac98" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate c-signup__form" target="_blank" noValidate>
           <div className="mc-field-group c-signup__form--field">
             <label htmlFor="mce-EMAIL" className="c-signup__form--field-label">
               Sign Up

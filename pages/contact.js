@@ -14,7 +14,7 @@ class Contact extends Component {
         <h5 className="o-head--intro__inset">Alternatively you can email us on 
         <Link href='mailto:enquiries@ldcdecorating.co.uk'>
           <a>enquiries@ldcdecorating.co.uk</a>
-        </Link>. We respond within 24 hours.</h5>
+        </Link>. We will try to respond within 24 hours.</h5>
       </div>
 
       <ContactForm />
