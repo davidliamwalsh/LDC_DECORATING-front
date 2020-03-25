@@ -1,21 +1,37 @@
 .c-banner {
   width: 100%;
-  height: 40vh;
+  height: 280px;
   
-  &__services  {
-    background: url(/static/1.jpg);
-  }
-
-  &__sectors  {
-    background: url(/static/1.jpg);
-  }
-
+  &__services,
   &__testimonials  {
-    background: url(/static/1.jpg);
+    background: url(/static/banner1.jpg);
   }
 
-  &__about {
-    background: url(/static/1.jpg);
+  &__sectors,
+  &__about  {
+    background: url(/static/banner2.jpg);
+  }
+
+  &__services--decorative,
+  &__services--specialist {
+    background: url(/static/banner3.jpg);
+  }
+  &__services--paintspray,
+  &__services--painting {
+    background: url(/static/banner4.jpg);
+  }
+  &__services--cladding,
+  &__services--plastering {
+    background: url(/static/banner5.jpg);
+  }
+
+  &__sectors--education,
+  &__sectors--retail  {
+    background: url(/static/banner6.jpg);
+  }
+  &__sectors--industrial,
+  &__sectors--office  {
+    background: url(/static/banner7.jpg);
   }
 
   &__image {
@@ -29,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 280px;
     text-align: center;
   }
 

@@ -6,115 +6,90 @@ class Banner extends Component {
   renderBannerSectors () {
     return this.props.router.pathname === '/sectors' ? 'c-banner__sectors c-banner__image' : ''
   }
-
-  renderBannerSectorsTitle () {
-    return this.props.router.pathname === '/sectors' ? 'c-banner__active' : ''
-  }
-
   renderBannerServices () {
     return this.props.router.pathname === '/services' ? 'c-banner__services c-banner__image' : ''
   }
-
-  renderBannerServicesTitle () {
-    return this.props.router.pathname === '/services' ? 'c-banner__active' : ''
-  }
-
   renderBannerTestimonials () {
     return this.props.router.pathname === '/testimonials' ? 'c-banner__testimonials c-banner__image' : ''
   }
-
-  renderBannerTestimonialsTitle () {
-    return this.props.router.pathname === '/testimonials' ? 'c-banner__active' : ''
-  }
-
   renderBannerAbout () {
     return this.props.router.pathname === '/about' ? 'c-banner__about c-banner__image' : ''
   }
-
-  renderBannerAboutTitle () {
-    return this.props.router.pathname === '/about' ? 'c-banner__active' : ''
-  }
-
   renderBannerContact () {
     return this.props.router.pathname === '/contact' ? 'c-banner__contact' : ''
   }
 
   renderBannerServicesPainting () {
-    return this.props.router.pathname === '/services/painting' ? 'c-banner__services c-banner__image' : ''
+    return this.props.router.pathname === '/services/painting' ? 'c-banner__services--painting c-banner__image' : ''
   }
-
-  renderBannerServicesPaintingTitle () {
-    return this.props.router.pathname === '/services/painting' ? 'c-banner__active' : ''
-  }
-
   renderBannerServicesDecorativeCoatings () {
-    return this.props.router.pathname === '/services/decorative-coatings' ? 'c-banner__services c-banner__image' : ''
+    return this.props.router.pathname === '/services/decorative-coatings' ? 'c-banner__services--decorative c-banner__image' : ''
   }
-
-  renderBannerServicesDecorativeCoatingsTitle () {
-    return this.props.router.pathname === '/services/decorative-coatings' ? 'c-banner__active' : ''
-  }
-
   renderBannerServicesProtectiveCoatings () {
-    return this.props.router.pathname === '/services/protective-coatings' ? 'c-banner__services c-banner__image' : ''
+    return this.props.router.pathname === '/services/protective-coatings' ? 'c-banner__services--specialist c-banner__image' : ''
   }
-
-  renderBannerServicesProtectiveCoatingsTitle () {
-    return this.props.router.pathname === '/services/protective-coatings' ? 'c-banner__active' : ''
-  }
-
   renderBannerServicesInternalExternalSpray () {
-    return this.props.router.pathname === '/services/internal-external-paint-spray' ? 'c-banner__services c-banner__image' : ''
+    return this.props.router.pathname === '/services/internal-external-paint-spray' ? 'c-banner__services--paintspray c-banner__image' : ''
   }
-
-  renderBannerServicesInternalExternalSprayTitle () {
-    return this.props.router.pathname === '/services/internal-external-paint-spray' ? 'c-banner__active' : ''
-  }
-
   renderBannerServicesRenderingPlastering () {
-    return this.props.router.pathname === '/services/rendering-plastering' ? 'c-banner__services c-banner__image' : ''
+    return this.props.router.pathname === '/services/rendering-plastering' ? 'c-banner__services--plastering c-banner__image' : ''
   }
-
-  renderBannerServicesRenderingPlasteringTitle () {
-    return this.props.router.pathname === '/services/rendering-plastering' ? 'c-banner__active' : ''
-  }
-
   renderBannerServicesCladdingRestoration () {
-    return this.props.router.pathname === '/services/cladding-restoration' ? 'c-banner__services c-banner__image' : ''
-  }
-
-  renderBannerServicesCladdingRestorationTitle () {
-    return this.props.router.pathname === '/services/cladding-restoration' ? 'c-banner__active' : ''
+    return this.props.router.pathname === '/services/cladding-restoration' ? 'c-banner__services--cladding c-banner__image' : ''
   }
 
   renderBannerSectorsFactoriesIndustrial () {
-    return this.props.router.pathname === '/sectors/factories-industrial' ? 'c-banner__sectors c-banner__image' : ''
+    return this.props.router.pathname === '/sectors/factories-industrial' ? 'c-banner__sectors--industrial c-banner__image' : ''
+  }
+  renderBannerSectorsOffice () {
+    return this.props.router.pathname === '/sectors/offices' ? 'c-banner__sectors--office c-banner__image' : ''
+  }
+  renderBannerSectorsRetailShop () {
+    return this.props.router.pathname === '/sectors/retail-shops' ? 'c-banner__sectors--retail c-banner__image' : ''
+  }
+  renderBannerSectorsSchools () {
+    return this.props.router.pathname === '/sectors/schools' ? 'c-banner__sectors--education c-banner__image' : ''
   }
 
+  renderBannerSectorsTitle () {
+    return this.props.router.pathname === '/sectors' ? 'c-banner__active' : ''
+  }
+  renderBannerServicesTitle () {
+    return this.props.router.pathname === '/services' ? 'c-banner__active' : ''
+  }
+  renderBannerTestimonialsTitle () {
+    return this.props.router.pathname === '/testimonials' ? 'c-banner__active' : ''
+  }
+  renderBannerAboutTitle () {
+    return this.props.router.pathname === '/about' ? 'c-banner__active' : ''
+  }
+  renderBannerServicesPaintingTitle () {
+    return this.props.router.pathname === '/services/painting' ? 'c-banner__active' : ''
+  }
+  renderBannerServicesDecorativeCoatingsTitle () {
+    return this.props.router.pathname === '/services/decorative-coatings' ? 'c-banner__active' : ''
+  }
+  renderBannerServicesProtectiveCoatingsTitle () {
+    return this.props.router.pathname === '/services/protective-coatings' ? 'c-banner__active' : ''
+  }
+  renderBannerServicesInternalExternalSprayTitle () {
+    return this.props.router.pathname === '/services/internal-external-paint-spray' ? 'c-banner__active' : ''
+  }
+  renderBannerServicesRenderingPlasteringTitle () {
+    return this.props.router.pathname === '/services/rendering-plastering' ? 'c-banner__active' : ''
+  }
+  renderBannerServicesCladdingRestorationTitle () {
+    return this.props.router.pathname === '/services/cladding-restoration' ? 'c-banner__active' : ''
+  }
   renderBannerSectorsFactoriesIndustrialTitle () {
     return this.props.router.pathname === '/sectors/factories-industrial' ? 'c-banner__active' : ''
   }
-
-  renderBannerSectorsOffice () {
-    return this.props.router.pathname === '/sectors/offices' ? 'c-banner__sectors c-banner__image' : ''
-  }
-
   renderBannerSectorsOfficeTitle () {
     return this.props.router.pathname === '/sectors/offices' ? 'c-banner__active' : ''
   }
-
-  renderBannerSectorsRetailShop () {
-    return this.props.router.pathname === '/sectors/retail-shops' ? 'c-banner__sectors c-banner__image' : ''
-  }
-
   renderBannerSectorsRetailShopTitle () {
     return this.props.router.pathname === '/sectors/retail-shops' ? 'c-banner__active' : ''
   }
-
-  renderBannerSectorsSchools () {
-    return this.props.router.pathname === '/sectors/schools' ? 'c-banner__sectors c-banner__image' : ''
-  }
-
   renderBannerSectorsSchoolsTitle () {
     return this.props.router.pathname === '/sectors/schools' ? 'c-banner__active' : ''
   }
@@ -126,13 +101,15 @@ class Banner extends Component {
     ${this.renderBannerSectors()} 
     ${this.renderBannerTestimonials()} 
     ${this.renderBannerAbout()} 
-    ${this.renderBannerContact()} 
+    ${this.renderBannerContact()}
+
     ${this.renderBannerServicesPainting()} 
     ${this.renderBannerServicesDecorativeCoatings()} 
     ${this.renderBannerServicesInternalExternalSpray()} 
     ${this.renderBannerServicesProtectiveCoatings()}
     ${this.renderBannerServicesRenderingPlastering()}
     ${this.renderBannerServicesCladdingRestoration()}
+
     ${this.renderBannerSectorsFactoriesIndustrial()}
     ${this.renderBannerSectorsOffice()}
     ${this.renderBannerSectorsRetailShop()}
@@ -140,13 +117,13 @@ class Banner extends Component {
     `}>
       <div className="c-banner__container">
         <div className="c-banner__title" data-aos="zoom-in">
+
           <h2 className={`c-banner__title--sectors ${this.renderBannerSectorsTitle()}`}>
             Sectors
           </h2>
           <h2 className={`c-banner__title--services ${this.renderBannerServicesTitle()}`}>
             Services
           </h2>
-          
           <h2 className={`c-banner__title--about ${this.renderBannerAboutTitle()}`}>
             About
           </h2>
@@ -171,6 +148,7 @@ class Banner extends Component {
           <h2 className={`c-banner__title--about ${this.renderBannerServicesRenderingPlasteringTitle()}`}>
             Rendering &amp; Plastering
           </h2>
+
           <h2 className={`c-banner__title--about ${this.renderBannerSectorsFactoriesIndustrialTitle()}`}> 
             Industrial
           </h2>

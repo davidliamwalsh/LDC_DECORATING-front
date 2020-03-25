@@ -74,18 +74,6 @@ class SideBar extends Component {
             <a>Office</a>
           </Link>
         </li>
-        <li className="c-service-sector-table__main--sidebar--list-item">
-          <span className="c-service-sector-table__main--sidebar--list-item__icon"><FontAwesomeIcon icon={faChevronRight} /></span>
-          <Link href='/services/cladding-restoration'>
-            <a>Cladding Restoration</a>
-          </Link>
-        </li>
-        <li className="c-service-sector-table__main--sidebar--list-item">
-          <span className="c-service-sector-table__main--sidebar--list-item__icon"><FontAwesomeIcon icon={faChevronRight} /></span>
-          <Link href='/services/rendering-plastering'>
-            <a>Rendering &amp; Plastering</a>
-          </Link>
-        </li>
       </ul>
     </>
   }
