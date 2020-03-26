@@ -3,6 +3,7 @@ import withData from '../lib/withData'
 import Layout from '../components/Layout'
 import KeyContactsGrid from '../components/KeyContactsGrid'
 import OperationalStaff from '../components/OperationalStaff'
+import Link from 'next/link'
 
 class About extends Component {
   render () {
@@ -33,6 +34,19 @@ class About extends Component {
           <hr className="o-line" />
         </div>
         <OperationalStaff />
+
+        <div className="c-about-links">
+          <div className="c-about-links__box">
+            <Link href='/careers'>
+              <a className="c-about-links__box--link">Careers</a>
+            </Link>
+          </div>
+          <div className="c-about-links__box">
+            <Link href='/news'>
+              <a className="c-about-links__box--link">News</a>
+            </Link>
+          </div>
+        </div>
       </div>
     </Layout>
   }
