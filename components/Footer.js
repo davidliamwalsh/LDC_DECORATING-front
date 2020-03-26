@@ -48,13 +48,13 @@ class Footer extends Component {
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/'>
-                  <a>Fleet</a>
+                <Link href='/about'>
+                  <a>About Us</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/'>
-                  <a>View all</a>
+                <Link href='/careers'>
+                  <a>Careers</a>
                 </Link>
               </li>
             </div>

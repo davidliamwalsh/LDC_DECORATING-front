@@ -21,7 +21,7 @@ class OurService extends Component {
                 <span><FontAwesomeIcon icon={faCheckCircle} /></span>
               </div>
               <div className="c-our-service__main--item-main">
-                <h4 className="c-our-service__main--item-main__title">title</h4>
+                <h4 className="c-our-service__main--item-main__title">FLEXIBLE OPERATIONS</h4>
                 <p className="c-our-service__main--item-main__description">Our flexible approach means we adapt to your requirements, whether that’s working out of hours or on weekend, whatever it takes to get the job done. We firmly believe that in doing our job, our aim is not interfere with you doing yours.</p>
               </div>
             </div>
@@ -30,7 +30,7 @@ class OurService extends Component {
                 <span><FontAwesomeIcon icon={faCheckCircle} /></span>
               </div>
               <div className="c-our-service__main--item-main">
-                <h4 className="c-our-service__main--item-main__title">title</h4>
+                <h4 className="c-our-service__main--item-main__title">FULL SERVICE</h4>
                 <p className="c-our-service__main--item-main__description">Full range of commercial painting services for both internal and external projects. From the use of specialist and protective paints, to cladding restoration, wide vinyl hanging, render and plastering.</p>
               </div>
             </div>
@@ -39,7 +39,7 @@ class OurService extends Component {
                 <span><FontAwesomeIcon icon={faCheckCircle} /></span>
               </div>
               <div className="c-our-service__main--item-main">
-                <h4 className="c-our-service__main--item-main__title">title</h4>
+                <h4 className="c-our-service__main--item-main__title">TRUSTED CONTRACTOR</h4>
                 <p className="c-our-service__main--item-main__description">LDC Decorating Contractors is the decorating contractor of choice for many large organisations, councils and main contractors with over 30 years proven history for exemplary levels of workmanship and service.</p>
               </div>
             </div>

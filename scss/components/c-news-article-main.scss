@@ -39,8 +39,10 @@
 
       &-news {
         &__hero {
+          display: none;
           &_image {
             width: 100%;
+            height: 120px;
           }
         }
 
@@ -67,6 +69,23 @@
     }
   }
 }
+@media screen and (min-width: 450px) {
+  .c-news-article-main__item--inner-news__hero {
+    display: block;
+    &_image {
+      height: 140px;
+    }
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .c-news-article-main__item--inner-news__hero {
+    &_image {
+      height: 160px;
+    }
+  }
+}
+
 @media screen and (min-width: $tablet-break) {
   .c-news-article-main {
 
