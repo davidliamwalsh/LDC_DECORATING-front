@@ -12,8 +12,9 @@ class Index extends Component {
   render () {
     return <Layout>
       <div className="o-head--intro">
-        <h4 className="o-head--intro__title" data-aos="fade">Take a look at some of the feedback we have received from clients. In a customer service survey, 100% of respondents stated that they would recommend our service and use us again in the future.</h4>
-        <h5 className="o-head--intro__inset" data-aos="fade">Take a look at some of the feedback we have received from clients. In a customer service survey, 100% of respondents stated that they would recommend our service and use us again in the future.</h5>
+        <h4 className="o-head--intro__title" data-aos="fade">Leading commercial painting company, LDC Decorating Contractors Decorating Contractors undertake refurbishment projects across the North of England and beyond.</h4>
+        <h5 className="o-head--intro__inset" data-aos="fade">LDC Decorating Contractors is a commercial painting and decorating contractor operating primarily in the North of England from our premises in Leeds, West Yorkshire. Established in 1984, our company now employs over fifty time-served painters and decorators working in all commercial and industrial sectors.</h5>
+        <h5 className="o-head--intro__inset" data-aos="fade">As a family run business, we are committed to paying the closest attention to your needs and always providing a professional service at competitive prices. With 85% of our trade coming from repeat orders, LDC Decorating Contractors has built an envious reputation for the highest standards of workmanship backed by the resources and skills to tackle projects of any size.</h5>
       </div>
       
       <OurService />
