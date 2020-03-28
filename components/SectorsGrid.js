@@ -11,7 +11,7 @@ class SectorsGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/sectors/retail-shops'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--retail" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>MAKE YOUR BUSINESS STAND OUT</h4>
@@ -24,7 +24,7 @@ class SectorsGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/sectors/factories-industrial'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--factories" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>INTERIOR &amp; EXTERIOR REFURBISHMENTS</h4>
@@ -37,7 +37,7 @@ class SectorsGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/sectors/schools'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--schools" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>EDUCATION REDECORATION SPECIALISTS</h4>
@@ -50,7 +50,7 @@ class SectorsGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/sectors/offices'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--offices" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>OFFICE REDECORATION SERVICES</h4>

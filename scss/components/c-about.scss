@@ -104,6 +104,7 @@
     grid-gap: 1em;
 
     &__box {
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
