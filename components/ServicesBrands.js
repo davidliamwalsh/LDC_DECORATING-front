@@ -7,7 +7,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.johnstonespaint.com/'>
-            <a><img src="/static/johnstone.jpg" alt=""/></a>
+            <a><img src="/static/brands/johnstone.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -17,7 +17,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.crownpaints.co.uk/'>
-            <a><img src="/static/crown.jpg" alt=""/></a>
+            <a><img src="/static/brands/crown.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -27,7 +27,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.dulux.co.uk/'>
-            <a><img src="/static/dulux.jpg" alt=""/></a>
+            <a><img src="/static/brands/dulux.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -37,7 +37,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.farrow-ball.com/'>
-            <a><img src="/static/farrowball.jpg" alt=""/></a>
+            <a><img src="/static/brands/farrowball.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -47,7 +47,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.glidden.com/'>
-            <a><img src="/static/glidden.jpg" alt=""/></a>
+            <a><img src="/static/brands/glidden.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -57,7 +57,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//leylandtrade.com/'>
-            <a><img src="/static/leyland.jpg" alt=""/></a>
+            <a><img src="/static/brands/leyland.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -67,7 +67,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.macphersontrade.co.uk/'>
-            <a><img src="/static/macpherson.jpg" alt=""/></a>
+            <a><img src="/static/brands/macpherson.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -77,7 +77,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.polycell.co.uk/'>
-            <a><img src="/static/polycell.jpg" alt=""/></a>
+            <a><img src="/static/brands/polycell.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -87,7 +87,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.sikkens.com/'>
-            <a><img src="/static/sikkens.jpg" alt=""/></a>
+            <a><img src="/static/brands/sikkens.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">
@@ -97,7 +97,7 @@ class ServicesBrands extends Component {
       <div className="c-services-brands__item" data-aos="fade">
         <div className="c-services-brands__item--image">
           <Link href='//www.stylelibrary.com/zoffany/'>
-            <a><img src="/static/zoffany.jpg" alt=""/></a>
+            <a><img src="/static/brands/zoffany.jpg" alt=""/></a>
           </Link>
         </div>
         <div className="c-services-brands__item--footer">

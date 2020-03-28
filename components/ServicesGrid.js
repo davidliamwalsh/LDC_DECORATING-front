@@ -11,7 +11,7 @@ class ServicesGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/services/decorative-coatings'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--decorative-coatings" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>Visual Wall Decorations</h4>
@@ -23,7 +23,7 @@ class ServicesGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/services/protective-coatings'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--protective-coatings" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>KNOWLEDGE &amp; EXPERTISE</h4>
@@ -35,7 +35,7 @@ class ServicesGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/services/painting'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--painting" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>PROFESSIONAL PAINTING SERVICES</h4>
@@ -47,7 +47,7 @@ class ServicesGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/services/internal-external-paint-spray'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--internal-external-paint-spray" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>PROFESSIONAL PAINT SPRAYING</h4>
@@ -59,7 +59,7 @@ class ServicesGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/services/cladding-restoration'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--cladding-restoration" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>EXTERNAL REFURBISHMENTS</h4>
@@ -71,7 +71,7 @@ class ServicesGrid extends Component {
             <hr className="o-line" />
           </div>
           <Link href='/services/rendering-plastering'>
-            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--wall-coverings" /></a>
+            <a><div className="c-service-sector--grid__item--image c-service-sector--grid__item--rendering-plastering" /></a>
           </Link>
           <div className="c-service-sector--grid__item--footer">
             <h4>PRIOR TO PAINT REPAIRS</h4>

@@ -4,34 +4,39 @@
   
   &__services,
   &__testimonials  {
-    background: url(/static/banner1.jpg);
+    background: url(/static/banner/banner1.jpg);
   }
 
   &__sectors,
   &__about  {
-    background: url(/static/banner2.jpg);
+    background: url(/static/banner/banner2.jpg);
+  }
+
+  &__news,
+  &__careers {
+    background: url(/static/banner/banner1.jpg);
   }
 
   &__services--decorative,
   &__services--specialist {
-    background: url(/static/banner3.jpg);
+    background: url(/static/banner/banner3.jpg);
   }
   &__services--paintspray,
   &__services--painting {
-    background: url(/static/banner4.jpg);
+    background: url(/static/banner/banner4.jpg);
   }
   &__services--cladding,
   &__services--plastering {
-    background: url(/static/banner5.jpg);
+    background: url(/static/banner/banner5.jpg);
   }
 
   &__sectors--education,
   &__sectors--retail  {
-    background: url(/static/banner6.jpg);
+    background: url(/static/banner/banner6.jpg);
   }
   &__sectors--industrial,
   &__sectors--office  {
-    background: url(/static/banner7.jpg);
+    background: url(/static/banner/banner7.jpg);
   }
 
   &__image {

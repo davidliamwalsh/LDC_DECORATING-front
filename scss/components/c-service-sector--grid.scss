@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: left;
     flex-direction: column;
-    height: 400px;
+    height: 350px;
 
     &--title {
       h2 {
@@ -19,8 +19,37 @@
         font-weight: 400;
       }
     }
-    &--wall-coverings {
-      background: url(/static/1.jpg);
+
+    &--decorative-coatings {
+      background: url(/static/services/decorative-wall.jpg);
+    }
+    &--protective-coatings {
+      background: url(/static/services/protective-covering.jpeg);
+    }
+    &--painting {
+      background: url(/static/services/painting.jpg);
+    }
+    &--internal-external-paint-spray {
+      background: url(/static/services/spraypaint.jpg);
+    }
+    &--cladding-restoration {
+      background: url(/static/services/cladding.jpg);
+    }
+    &--rendering-plastering {
+      background: url(/static/services/plastering.jpeg);
+    }
+
+    &--retail {
+      background: url(/static/sectors/retail.jpg);
+    }
+    &--factories {
+      background: url(/static/sectors/factories.jpg);
+    }
+    &--schools {
+      background: url(/static/sectors/schools.jpg);
+    }
+    &--offices {
+      background: url(/static/sectors/offices.jpg);
     }
 
     &--image {
@@ -28,7 +57,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
-      height: 300px;
+      height: 230px;
     }
     
     &--footer {
