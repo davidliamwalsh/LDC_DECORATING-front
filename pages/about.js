@@ -36,16 +36,16 @@ class About extends Component {
         <OperationalStaff />
 
         <div className="c-about-links">
-          <div className="c-about-links__box">
-            <Link href='/careers'>
+          <Link href='/careers'>
+            <div className="c-about-links__box">
               <a className="c-about-links__box--link">Careers</a>
-            </Link>
-          </div>
-          <div className="c-about-links__box">
-            <Link href='/news'>
+            </div>
+          </Link>
+          <Link href='/news'>
+            <div className="c-about-links__box">
               <a className="c-about-links__box--link">News</a>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </Layout>

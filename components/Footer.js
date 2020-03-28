@@ -37,19 +37,39 @@ class Footer extends Component {
 
           <div className="c-footer-upper__list">
             <div className="c-footer-upper__list--head">
-              <h4 className="c-footer-upper__list--head-title">HEADER</h4>
+              <h4 className="c-footer-upper__list--head-title">Links</h4>
               <hr className="o-line" />
               <span className="c-footer-upper__list--head-btn" onClick={this.footerClickFirst}>+</span>
             </div>
             <div className={`c-footer-upper__list--body ${this.renderFooterListFirst()}`}>
               <li className="c-footer-upper__list--item">
                 <Link href='/'>
-                  <a>Browse the range</a>
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item">
+                <Link href='/services'>
+                  <a>Services</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item">
+                <Link href='/sectors'>
+                  <a>Sectors</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item">
+                <Link href='/testimonials'>
+                  <a>Testimonials</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
                 <Link href='/about'>
                   <a>About Us</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item">
+                <Link href='/contact'>
+                  <a>Contact</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
