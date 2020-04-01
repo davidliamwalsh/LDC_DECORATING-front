@@ -1,0 +1,50 @@
+.c-client-services {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1em;
+  color: $darkgrey;
+  line-height: 135%;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--hero {
+      color: $button;
+      
+      span {
+        font-size: 5em;
+      }
+    }
+
+    &--title {
+      &-text {
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 1em 0 .5em 0;
+      }
+    }
+
+    &--main {
+      &-text {
+        font-weight: 100;
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .c-client-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: $laptop-break) {
+  .c-client-services {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

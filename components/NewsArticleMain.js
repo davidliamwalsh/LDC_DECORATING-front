@@ -39,12 +39,12 @@ class NewsArticleMain extends Component {
         } else {
           return <div className="c-news-article-main">
             <div className="c-container">
-              <div className="o-section-head">
+              <div className="o-section-head no-padding">
                 <h4 className="o-section-head__title">
                   Latest News
                 </h4>
               </div>
-              <div className="o-section-head__line">
+              <div className="o-section-head__line no-padding">
                 <hr />
               </div>
               <div className="c-news-article-main__main">

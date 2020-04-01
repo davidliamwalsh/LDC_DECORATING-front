@@ -41,7 +41,7 @@ class Navbar extends Component {
   }
 
   render () {
-
+    console.log(this.state.navBarOpen)
     return (
       <div className={`c-navbar ${this.renderTransparantNavBar()}`}>
         <div className="c-navbar__logo">
@@ -86,20 +86,15 @@ class Navbar extends Component {
             </Link>
           </li>
           <li className={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
-            <a className="c-navbar__action-link" href={`${process.env.BACKEND_URL}/admin`}>Sign In</a>
-            <a className="c-navbar__action-link"href="#"><i className="fas fa-shopping-basket"></i></a>
+            <a className="c-navbar__action-link" href={`${process.env.BACKEND_URL}/admin`}>Admin</a>
           </li>
         </div>
 
         <div className="c-navbar__actions">
-          <div className="c-navbar__actions-shop">
-            <Link href='/'>
-              <a>Shop</a>
-            </Link>
-          </div>
+          
           <div className="c-navbar__actions-signIn">
             <Link href={`${process.env.BACKEND_URL}/admin`}>
-              <a>Sign In</a>
+              <a>Admin</a>
             </Link>
           </div>
           <div className="c-navbar__actions-checkout">
