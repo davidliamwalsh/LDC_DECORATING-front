@@ -4,16 +4,17 @@ import gql from 'graphql-tag'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAt } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { Facebook } from 'react-content-loader'
 import Link from 'next/link'
 
-class KeyContactsGridTest extends Component {
+class AboutPainterDecoratorsGrid extends Component {
 
   constructor (props) {
     super(props)
 
-    this.USERS_QUERY = gql`
-      query users {
-        users  {
+    this.DECORATORS_QUERY = gql`
+      query decorators {
+        decorators  {
           slug
           image
           previewImage
@@ -29,37 +30,38 @@ class KeyContactsGridTest extends Component {
   }
 
   render () {
-    const { userSize } = this.props
+    const { decoratorSize } = this.props
+    const MyFacebookLoader = () => <Facebook />
 
-    return <Query query={this.USERS_QUERY}>
+    return <Query query={this.DECORATORS_QUERY}>
       {({ loading, data }) => {
         if (loading) {
           return (
             <div className="c-loader__container">
-              <p>loading....</p>
+              <MyFacebookLoader />
             </div>
           )
         } else {
           return <>
             <div className="o-grid-3-2-1">
-              {data.users.slice(0, userSize).map((user, index) => {
+              {data.decorators.slice(0, decoratorSize).map((decorator, index) => {
                 return <div className="c-about__grid_card" key={index}>
                   <div className="c-about__grid_card--hero">
-                    <img className="c-about__grid_card--hero-image" src={`${process.env.BACKEND_URL}${user.previewImage}`} />
+                    <img className="c-about__grid_card--hero-image" src={`${process.env.BACKEND_URL}${decorator.previewImage}`} />
                   </div>
                   <div className="c-about__grid_card--head">
-                    <h4 className="c-about__grid_card--head-main">{user.title}</h4>
-                    <h4 className="c-about__grid_card--head-inset">{user.subtitle}</h4>
+                    <h4 className="c-about__grid_card--head-main">{decorator.title}</h4>
+                    <h4 className="c-about__grid_card--head-inset">{decorator.subtitle}</h4>
                     <hr className="c-about__grid_card--head-line" />
                   </div>
                   <div className="c-about__grid_card--text">
-                    <p>{user.body}</p>
+                    <p>{decorator.body}</p>
                   </div>
                   <div className="c-about__grid_card--links">
-                    <Link href={`mailto:${user.email}`}>
+                    <Link href={`mailto:${decorator.email}`}>
                       <a><FontAwesomeIcon icon={faAt} /></a>
                     </Link>
-                    <Link href={`${user.linkedin}`}>
+                    <Link href={`${decorator.linkedin}`}>
                       <a><FontAwesomeIcon icon={faLinkedinIn} /></a>
                     </Link>
                   </div>
@@ -73,4 +75,4 @@ class KeyContactsGridTest extends Component {
   }
 }
 
-export default KeyContactsGridTest
+export default AboutPainterDecoratorsGrid

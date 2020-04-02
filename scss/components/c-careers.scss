@@ -1,0 +1,32 @@
+.c-careers {
+  display: block;
+  color: $lightgrey;
+
+  &__item {
+
+    &--inner {
+
+      &-title {
+        padding: .5em 0;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      &-body {
+        padding: .5em 0;
+        font-size: 16px;
+        font-weight: 100;
+      }
+      &-list {
+        padding: .5em 0;
+        font-size: 16px;
+        font-weight: 100;
+
+        a {
+          padding: 0 5px;
+          color: $danger;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

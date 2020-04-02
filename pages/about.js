@@ -1,7 +1,8 @@
 import { Component } from 'react'
 import withData from '../lib/withData'
 import Layout from '../components/Layout'
-import KeyContactsGrid from '../components/KeyContactsGrid'
+import AboutOfficeGrid from '../components/AboutOfficeGrid'
+import AboutPainterDecoratorsGrid from '../components/AboutPainterDecoratorsGrid'
 import Link from 'next/link'
 
 class About extends Component {
@@ -23,10 +24,16 @@ class About extends Component {
       
       <div className="c-container">
         <div className="c-about__section">
-          <h2 className="c-about__section--title">Key Contacts</h2>
+          <h2 className="c-about__section--title">Office Staff</h2>
           <hr className="o-line" />
         </div>
-        <KeyContactsGrid userSize={10} />
+        <AboutOfficeGrid userSize={10} />
+
+        <div className="c-about__section">
+          <h2 className="c-about__section--title">Key Painting &amp; Decorators</h2>
+          <hr className="o-line" />
+        </div>
+        <AboutPainterDecoratorsGrid decoratorSize={10} />
 
         <div className="c-about-links">
           <Link href='/careers'>
