@@ -20,6 +20,11 @@
 
     &--footer {
       text-align: center;
+      color: $lightgrey;
+      
+      p {
+        font-weight: 100;
+      }
     }
   }
 }

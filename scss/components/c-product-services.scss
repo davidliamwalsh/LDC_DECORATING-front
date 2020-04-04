@@ -1,4 +1,4 @@
-.c-our-service {
+.c-product-services {
   width: 100%;
   height: auto;
   margin: auto;
@@ -33,7 +33,7 @@
       &-image {
         span {
           font-size: 40px;
-          color: $success;
+          color: $button;
         }
       }
 
@@ -53,7 +53,7 @@
 }
 
 @media screen and (min-width: $tablet-break) {
-  .c-our-service__main {
+  .c-product-services__main {
     grid-template-columns: auto auto auto;
     grid-gap: 1em;
   }

@@ -22,3 +22,8 @@ a {
   text-decoration: none;
   color: $lightgrey;
 }
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

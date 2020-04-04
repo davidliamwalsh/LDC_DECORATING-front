@@ -37,23 +37,21 @@ class TestimonialPage extends Component {
             </div>
           )
         } else {
-          return <>
-            <div className="c-testimonial">
-              {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
-                return <div className="c-testimonial__container" key={index} data-aos="fade-in">
-                  <div className="c-testimonial__image">
-                  <img className="c-testimonial__image--hero" src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
-                  </div>
-                  <div className="c-testimonial__main">
-                    <h5 className="c-testimonial__main--body">{testimonial.body}</h5>
-                    <h5 className="c-testimonial__main--date">{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
-                    <hr className="o-line__testimonial" />
-                    <h5 className="c-testimonial__main--title">{testimonial.title}</h5>
-                  </div>
+          return <div className="c-testimonial">
+            {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
+              return <div className="c-testimonial__container" key={index} data-aos="fade-in">
+                <div className="c-testimonial__image">
+                <img className="c-testimonial__image--hero" src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
                 </div>
-              })}
-            </div>
-          </>
+                <div className="c-testimonial__main">
+                  <h5 className="c-testimonial__main--body">{testimonial.body}</h5>
+                  <h5 className="c-testimonial__main--date">{moment(testimonial.createdAt).format('MMMM Do YYYY')}</h5>
+                  <hr className="o-line__testimonial" />
+                  <h5 className="c-testimonial__main--title">{testimonial.title}</h5>
+                </div>
+              </div>
+            })}
+          </div>
         }
       }}
     </Query>
