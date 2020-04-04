@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import withData from '../lib/withData'
 import Layout from '../components/Layout'
+import NewsPageMain from '../components/NewsPageMain'
 
 class News extends Component {
   render () {
@@ -17,6 +18,11 @@ class News extends Component {
       <div className="o-section-head__line">
         <hr />
       </div>
+
+      <div className="c-container">
+      <NewsPageMain newsArticleSize={10} />
+      </div>
+      
     </Layout>
   }
 }
