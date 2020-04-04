@@ -89,17 +89,32 @@ class Footer extends Component {
             <div className={`c-footer-upper__list--body ${this.renderFooterListSecond()}`}>
               <li className="c-footer-upper__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Cladding &amp; Restoration</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Decorative Coatings</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
                 <Link href='/'>
-                  <a>View all</a>
+                  <a>Painting</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item">
+                <Link href='/'>
+                  <a>Internal &amp; External</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item">
+                <Link href='/'>
+                  <a>Potective Coatings</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item">
+                <Link href='/'>
+                  <a>Rendering &amp; Plastering</a>
                 </Link>
               </li>
             </div>
@@ -144,7 +159,7 @@ class Footer extends Component {
             </div>
             <div className="c-footer-lower__list">
             <li className="c-footer-lower__list--item">
-                <Link href='/'>
+                <Link href={`${process.env.BACKEND_URL}/admin`}>
                   <a>Admin</a>
                 </Link>
               </li>
