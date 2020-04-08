@@ -110,6 +110,10 @@ app.prepare()
     return app.render(req, res, '/careers', req.query)
   })
 
+  server.get('/legal', (req, res) => {
+    return app.render(req, res, '/legal', req.query)
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res)
   })

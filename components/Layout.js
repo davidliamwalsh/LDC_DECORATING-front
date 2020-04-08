@@ -2,6 +2,7 @@ import { Component } from 'react'
 import HeaderIntro from '../components/HeaderIntro'
 import Header from '../components/Header'
 import Quote from '../components/Quote'
+import ScrolltoTop from '../components/ScrollToTop'
 import Footer from '../components/Footer'
 import '../scss/application.scss'
 import AOS from 'aos';
@@ -19,7 +20,7 @@ class Layout extends Component {
     })
   }
   render () {
-    if (this.props.router.pathname === '/contact') {
+    if (this.props.router.pathname === '/contact', '/legal') {
       return <>
         <MetaTags>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -30,6 +31,7 @@ class Layout extends Component {
         </MetaTags>
         <HeaderIntro />
         <Header />
+        <ScrolltoTop />
           { this.props.children }
         <Footer />
         <script src="https://unpkg.com/aos@next/dist/aos.js" />
@@ -46,6 +48,7 @@ class Layout extends Component {
         </MetaTags>
         <HeaderIntro />
         <Header />
+        <ScrolltoTop />
           { this.props.children }
         <Quote />
         <Footer />

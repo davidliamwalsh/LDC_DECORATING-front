@@ -52,9 +52,6 @@ class Index extends Component {
         <h4 className="o-section-head__title">
           Accreditations
         </h4>
-        <Link href='/accreditations'>
-          <a className="o-btn">View all</a>
-        </Link>
       </div>
       <div className="o-section-head__line">
         <hr />
