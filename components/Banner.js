@@ -23,7 +23,10 @@ class Banner extends Component {
   }
 
   renderBannerContact () {
-    return this.props.router.pathname === '/contact' ? 'c-banner__contact' : ''
+    return this.props.router.pathname === '/contact' ? 'c-banner__none' : ''
+  }
+  renderBannerLegal () {
+    return this.props.router.pathname === '/legal' ? 'c-banner__none' : ''
   }
 
   renderBannerServicesPainting () {
@@ -116,6 +119,7 @@ class Banner extends Component {
     ${this.renderBannerTestimonials()} 
     ${this.renderBannerAbout()} 
     ${this.renderBannerContact()}
+    ${this.renderBannerLegal()}
     ${this.renderBannerNews()}
     ${this.renderBannerCareers()}
 
