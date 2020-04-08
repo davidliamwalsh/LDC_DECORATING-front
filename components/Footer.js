@@ -88,32 +88,32 @@ class Footer extends Component {
             </div>
             <div className={`c-footer-upper__list--body ${this.renderFooterListSecond()}`}>
               <li className="c-footer-upper__list--item">
-                <Link href='/'>
+                <Link href='/cladding-restoration'>
                   <a>Cladding &amp; Restoration</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/'>
+                <Link href='/decorative-coatings'>
                   <a>Decorative Coatings</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/'>
+                <Link href='/services/painting'>
                   <a>Painting</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/'>
+                <Link href='/internal-external-paint-spray'>
                   <a>Internal &amp; External</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/'>
+                <Link href='/protective-coatings'>
                   <a>Potective Coatings</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/'>
+                <Link href='/rendering-plastering'>
                   <a>Rendering &amp; Plastering</a>
                 </Link>
               </li>
@@ -147,6 +147,8 @@ class Footer extends Component {
                 </p>
                 <p>Tel: 03303 201070</p>
                 <p>Office Hours: Mon-Fri 9am - 6pm</p>
+                <p>VAT Number: 141654721</p>
+                <p>Company Number: 8169972</p>
               </li>
             </div>
           </div>
@@ -164,33 +166,23 @@ class Footer extends Component {
                 </Link>
               </li>
               <li className="c-footer-lower__list--item">
-                <Link href='/'>
+                <Link href='/legal'>
                   <a>Privacy Policy</a>
                 </Link>
               </li>
               <li className="c-footer-lower__list--item">
-                <Link href='/'>
+                <Link href='/legal'>
                   <a>Use of Cookies</a>
                 </Link>
               </li>
               <li className="c-footer-lower__list--item">
-                <Link href='/'>
-                  <a>Terms of Use</a>
+                <Link href='/legal'>
+                  <a>T &amp; C</a>
                 </Link>
               </li>
               <li className="c-footer-lower__list--item">
-                <Link href='/'>
-                  <a>Refunds</a>
-                </Link>
-              </li>
-              <li className="c-footer-lower__list--item">
-                <Link href='/'>
-                  <a>Legal</a>
-                </Link>
-              </li>
-              <li className="c-footer-lower__list--item">
-                <Link href='/'>
-                  <a>Site Map</a>
+                <Link href='/legal'>
+                  <a>FAQ</a>
                 </Link>
               </li>
             </div>

@@ -3,6 +3,7 @@ import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import moment from 'moment'
 import { Facebook } from 'react-content-loader'
+import Link from 'next/link'
 
 class NewsArticleMain extends Component {
 
@@ -43,6 +44,9 @@ class NewsArticleMain extends Component {
                 <h4 className="o-section-head__title">
                   Latest News
                 </h4>
+                <Link href='/news'>
+                  <a className="o-btn">View all</a>
+                </Link>
               </div>
               <div className="o-section-head__line no-padding">
                 <hr />
