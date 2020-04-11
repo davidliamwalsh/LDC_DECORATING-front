@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 class HeaderIntro extends Component {
   render () {
-    return (
+    return <div className="c-top">
       <div className="c-header-intro">
         <div className="c-header-intro__container">
           <div className="c-header-intro__contact">
@@ -36,7 +36,7 @@ class HeaderIntro extends Component {
           </div>
         </div>
       </div>
-    )
+    </div>
   }
 }
 
