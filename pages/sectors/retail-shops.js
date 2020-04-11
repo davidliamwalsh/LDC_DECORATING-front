@@ -2,18 +2,9 @@ import { Component } from 'react'
 import withData from '../../lib/withData'
 import Layout from '../../components/Layout'
 import SideBar from '../../components/SideBar'
-import Slider from "react-slick"
 
 class SectorsRetailShop extends Component {
   render () {
-
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 600,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
 
     return <Layout>
       <div className="c-container">
@@ -33,15 +24,6 @@ class SectorsRetailShop extends Component {
           </div>
         </div>
       </div>
-
-      <Slider {...settings}>
-        <div>
-          <div className="c-header__slider--image" />
-        </div>
-        <div>
-          <div className="c-header__slider--image" />
-        </div>
-      </Slider>
     </Layout>
   }
 }

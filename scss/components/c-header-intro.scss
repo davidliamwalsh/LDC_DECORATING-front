@@ -1,10 +1,16 @@
+.c-top {
+  background: black;
+}
+
 .c-header-intro {
   display: block;
   width: 100%;
-  background: black;
+  max-width: 1000px;
   color: $white;
   font-weight: 100;
   font-size: 12px;
+  margin: auto;
+  padding: 0 1.5em;
 
   a {
     color: $white;
@@ -16,7 +22,6 @@
     align-items: center;
     height: 5vh;
     margin: auto;
-    padding: 0 3em;
   }
 
   &__contact {
@@ -49,11 +54,9 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 1200px) {
   .c-header-intro {
-    
-    &__container {
-      padding: 0 4em;
-    }
+    padding: 0;
   }
 }

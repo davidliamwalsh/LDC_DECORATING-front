@@ -25,7 +25,7 @@ class Navbar extends Component {
   }
 
   renderTransparantNavBar () {
-    return this.props.router.pathname === '/' ? 'c-navbar-active' : ''
+    return this.props.router.pathname === '/' ? 'c-nav-active' : ''
   }
 
   burgerRotateTop () {
@@ -43,67 +43,69 @@ class Navbar extends Component {
   render () {
     console.log(this.state.navBarOpen)
     return (
-      <div className={`c-navbar ${this.renderTransparantNavBar()}`}>
-        <div className="c-navbar__logo">
-          <Link href='/'>
-            <a>LDC DECORATING CONTRACTORS</a>
-          </Link>
-        </div>
-        <div className="c-navbar__burger" onClick={this.burgerClick}>
-          <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
-          <div className={`c-navbar__burger-line--middle ${this.burgerRotateMiddle()}`}></div>
-          <div className={`c-navbar__burger-line--bottom ${this.burgerRotateBottom()}`}></div>
-        </div>
-        <div className={`c-navbar__links ${this.renderBurgerMenu()}`}>
-          <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+      <div className={`c-nav ${this.renderTransparantNavBar()}`}>
+        <div className={`c-navbar`}>
+          <div className="c-navbar__logo">
             <Link href='/'>
-              <a>Home</a>
+              <a>LDC DECORATING CONTRACTORS</a>
             </Link>
-          </li>
-          <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-            <Link href='/services'>
-              <a>Services</a>
-            </Link>
-          </li>
-          <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-            <Link href='/sectors'>
-              <a>Sectors</a>
-            </Link>
-          </li>
-          <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-            <Link href='/testimonials'>
-              <a>Testimonials</a>
-            </Link>
-          </li>
-          <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-            <Link href='/about'>
-              <a>About</a>
-            </Link>
-          </li>
-          <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-            <Link href='/contact'>
-              <a>Contact</a>
-            </Link>
-          </li>
-          <li className={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
-            <a className="c-navbar__action-link" href={`${process.env.BACKEND_URL}/admin`}>Admin</a>
-          </li>
-        </div>
+          </div>
+          <div className="c-navbar__burger" onClick={this.burgerClick}>
+            <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
+            <div className={`c-navbar__burger-line--middle ${this.burgerRotateMiddle()}`}></div>
+            <div className={`c-navbar__burger-line--bottom ${this.burgerRotateBottom()}`}></div>
+          </div>
+          <div className={`c-navbar__links ${this.renderBurgerMenu()}`}>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+              <Link href='/'>
+                <a>Home</a>
+              </Link>
+            </li>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+              <Link href='/services'>
+                <a>Services</a>
+              </Link>
+            </li>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+              <Link href='/sectors'>
+                <a>Sectors</a>
+              </Link>
+            </li>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+              <Link href='/testimonials'>
+                <a>Testimonials</a>
+              </Link>
+            </li>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+              <Link href='/about'>
+                <a>About</a>
+              </Link>
+            </li>
+            <li className={`c-navbar__link ${this.addFadeMenu()}`}>
+              <Link href='/contact'>
+                <a>Contact</a>
+              </Link>
+            </li>
+            <li className={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
+              <a className="c-navbar__action-link" href={`${process.env.BACKEND_URL}/admin`}>Admin</a>
+            </li>
+          </div>
 
-        <div className="c-navbar__actions">
-          
-          <div className="c-navbar__actions-signIn">
-            <Link href={`${process.env.BACKEND_URL}/admin`}>
-              <a>Admin</a>
-            </Link>
+          <div className="c-navbar__actions">
+            
+            <div className="c-navbar__actions-signIn">
+              <Link href={`${process.env.BACKEND_URL}/admin`}>
+                <a>Admin</a>
+              </Link>
+            </div>
+            <div className="c-navbar__actions-checkout">
+              <Link href='/'>
+                <a><i className="fas fa-shopping-basket"></i></a>
+              </Link>
+            </div>
           </div>
-          <div className="c-navbar__actions-checkout">
-            <Link href='/'>
-              <a><i className="fas fa-shopping-basket"></i></a>
-            </Link>
-          </div>
-        </div>
-      </div>  
+        </div> 
+      </div>
     )
   }
 }
