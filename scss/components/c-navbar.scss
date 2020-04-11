@@ -1,17 +1,25 @@
-.c-navbar {
-  height: 10vh;
+.c-nav {
   background: linear-gradient(black, transparent);
-  position: relative;
   width: 100%;
-  z-index: 9;
+  height: 10vh;
+  z-index: 10;
 
   &-active {
     position: absolute;
   }
+}
+
+.c-navbar {
+  height: 10vh;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  z-index: 9;
+  justify-content: center;
 
   &__logo {
     position: absolute;
-    left: 2em;
+    left: 1em;
     top: 50%;
     width: 200px;
     transform: translate(0%, -50%);
@@ -33,7 +41,7 @@
   &__burger {
     position: absolute;
     cursor: pointer;
-    right: 2em;
+    right: 1em;
     top: 50%;
     transform: translate(-5%, -50%);
     z-index: 9;
@@ -152,7 +160,7 @@
     grid-template-columns: 25% 50% 25%;
     align-items: center;
     margin: auto;
-    padding: 0 3em;
+    padding: 0 1em;
 
     &__logo {
       position: relative;
@@ -235,5 +243,12 @@
         transition: none;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .c-navbar {
+    padding: 0;
   }
 }
