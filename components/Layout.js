@@ -20,7 +20,7 @@ class Layout extends Component {
     })
   }
   render () {
-    if (this.props.router.pathname === '/contact', '/legal') {
+    if (this.props.router.pathname === '/contact') {
       return <>
         <MetaTags>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
