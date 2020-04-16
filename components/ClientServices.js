@@ -8,7 +8,7 @@ class ClientServices extends Component {
       <div className="c-container">
         <div className="c-client-services">
           <div className="c-client-services__item">
-            <div className="c-client-services__item--hero">
+            <div className="c-client-services__item--hero" data-aos="fade">
               <span><FontAwesomeIcon icon={faPaintRoller} /></span>
             </div>
             <div className="c-client-services__item--title">
@@ -24,7 +24,7 @@ class ClientServices extends Component {
           </div>
 
           <div className="c-client-services__item">
-            <div className="c-client-services__item--hero">
+            <div className="c-client-services__item--hero" data-aos="fade" data-aos-delay="200">
               <span><FontAwesomeIcon icon={faBuilding} /></span>
             </div>
             <div className="c-client-services__item--title">
@@ -40,7 +40,7 @@ class ClientServices extends Component {
           </div>
 
           <div className="c-client-services__item">
-            <div className="c-client-services__item--hero">
+            <div className="c-client-services__item--hero" data-aos="fade" data-aos-delay="400">
               <span><FontAwesomeIcon icon={faUsers} /></span>
             </div>
             <div className="c-client-services__item--title">
@@ -56,7 +56,7 @@ class ClientServices extends Component {
           </div>
 
           <div className="c-client-services__item">
-            <div className="c-client-services__item--hero">
+            <div className="c-client-services__item--hero" data-aos="fade" data-aos-delay="600">
               <span><FontAwesomeIcon icon={faFillDrip} /></span>
             </div>
             <div className="c-client-services__item--title">

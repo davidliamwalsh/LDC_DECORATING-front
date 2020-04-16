@@ -1,7 +1,7 @@
 .c-nav {
   background: linear-gradient(black, transparent);
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   z-index: 10;
 
   &-active {
@@ -10,7 +10,7 @@
 }
 
 .c-navbar {
-  height: 10vh;
+  height: 15vh;
   position: relative;
   width: 100%;
   max-width: 1000px;
@@ -23,10 +23,30 @@
     top: 50%;
     width: 200px;
     transform: translate(0%, -50%);
+    display: flex;
+    flex-direction: row;
 
-    a {
+    &--hero {
+      width: 35px;
+      height: 40px;
+      animation: logo 3s infinite;
+    }
+
+    @keyframes logo {
+      from { 
+        transform: rotateY(0deg); 
+      } to { 
+          transform: rotateY(360deg); 
+      }
+    }
+
+    &--text {
+      font-size: 12px;
       color: $white;
       letter-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 
