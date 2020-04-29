@@ -46,11 +46,8 @@ class Navbar extends Component {
       <div className={`c-nav ${this.renderTransparantNavBar()}`}>
         <div className={`c-navbar`}>
           <div className="c-navbar__logo">
-            <img className="c-navbar__logo--hero" src="/static/output-onlinepngtools 2.02.05 PM.png" alt="" data-aos="flip-left" />
-            <div className="c-navbar__logo--text">
-              <h4>Decorating</h4>
-              <h4>Contractors</h4>
-            </div>
+            <img className="c-navbar__logo--hero" src="/static/ldc-logo-2.png" alt="" />
+            
           </div>
           <div className="c-navbar__burger" onClick={this.burgerClick}>
             <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
