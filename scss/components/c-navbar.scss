@@ -9,7 +9,7 @@
 }
 
 .c-navbar {
-  height: 80px;
+  height: 65px;
   position: relative;
   width: 100%;
   max-width: 1000px;
@@ -26,8 +26,8 @@
     grid-template-columns: 60px auto;
 
     &--hero {
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -154,6 +154,18 @@
     background: $dark;
   }
 }
+
+@media screen and (min-width: 550px) {
+  .c-navbar {
+    height: 75px;
+
+    &__logo--hero {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
 
 @media screen and (min-width: 1000px) {
   .c-navbar {
