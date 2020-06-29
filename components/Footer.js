@@ -88,12 +88,12 @@ class Footer extends Component {
             </div>
             <div className={`c-footer-upper__list--body ${this.renderFooterListSecond()}`}>
               <li className="c-footer-upper__list--item">
-                <Link href='/cladding-restoration'>
+                <Link href='/services/cladding-restoration'>
                   <a>Cladding &amp; Restoration</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/decorative-coatings'>
+                <Link href='/services/decorative-coatings'>
                   <a>Decorative Coatings</a>
                 </Link>
               </li>
@@ -103,17 +103,17 @@ class Footer extends Component {
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/internal-external-paint-spray'>
+                <Link href='/services/internal-external-paint-spray'>
                   <a>Internal &amp; External</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/protective-coatings'>
+                <Link href='/services/protective-coatings'>
                   <a>Potective Coatings</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item">
-                <Link href='/rendering-plastering'>
+                <Link href='/services/rendering-plastering'>
                   <a>Rendering &amp; Plastering</a>
                 </Link>
               </li>
