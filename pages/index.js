@@ -42,7 +42,7 @@ class Index extends Component {
       <div className="o-section-head__line">
         <hr />
       </div>
-      <div className="c-testimonialcarousel mb-4">
+      <div className="c-testimonialcarousel pb-4">
         <TestimonialCarousel />
       </div>
 

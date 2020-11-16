@@ -1,15 +1,11 @@
 .c-testimonialcarousel {
   color: $darkgrey;
+  max-width: 1070px;
+  margin: auto;
     .slick-prev:before,
     .slick-next:before {
       color: $lightgrey;
       font-size: 26px;
-    }
-    .slick-next {
-      right: 20px !important;
-    }
-    .slick-prev {
-      left: 20px !important;
     }
     .slick-slider {
       height: 300px;
