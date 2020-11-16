@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import ClientServices from '../components/ClientServices'
 import ProductServices from '../components/ProductServices'
-import TestimonialPage from '../components/TestimonialPage'
+import TestimonialCarousel from '../components/TestimonialCarousel'
 import NewsArticleMain from '../components//NewsArticleMain'
 import Accreditations from '../components/Accreditations'
 import Layout from '../components/Layout'
@@ -42,8 +42,8 @@ class Index extends Component {
       <div className="o-section-head__line">
         <hr />
       </div>
-      <div className="c-container">
-        <TestimonialPage testimonialSize={3} />
+      <div className="c-testimonialcarousel mb-4">
+        <TestimonialCarousel />
       </div>
 
       <NewsArticleMain newsArticleSize={3} />
