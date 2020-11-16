@@ -41,7 +41,6 @@ class Navbar extends Component {
   }
 
   render () {
-    console.log(this.state.navBarOpen)
     return (
       <div className={`c-nav ${this.renderTransparantNavBar()}`}>
         <div className={`c-navbar`}>
