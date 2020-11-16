@@ -41,7 +41,7 @@ class TestimonialPage extends Component {
             {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
               return <div className="c-testimonial__container" key={index} data-aos="fade-in">
                 <div className="c-testimonial__image">
-                <img className="c-testimonial__image--hero" src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
+                  <img className="c-testimonial__image--hero" src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
                 </div>
                 <div className="c-testimonial__main">
                   <h5 className="c-testimonial__main--body">{testimonial.body}</h5>
