@@ -6,7 +6,6 @@
   padding: 1em;
   
   &__list {
-    border-top: 1px solid $darkgrey;
     border-bottom: 1px solid $darkgrey;
     padding: .5em 0;
 
@@ -85,17 +84,15 @@
       }
     }
   }
+}
 
-  &__list:nth-child(2) {
-    border-top: none;
-  }
-  &__list:nth-child(3) {
-    border: none;
-  }
+.footer-item-active-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-item-active {
-  display: block !important;
+  display: block;
 }
 
 .active {
