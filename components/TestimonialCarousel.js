@@ -33,7 +33,10 @@ class TestimonialCarousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1
     }
+
+    const { testimonialSize } = this.props
     const MyFacebookLoader = () => <Facebook />
+
     return <Query query={this.TESTIMONIALS_QUERY}>
       {({ loading, data }) => {
         if (loading) {
@@ -44,9 +47,9 @@ class TestimonialCarousel extends Component {
           )
         } else {
           return <>
-          <h4 className="c-testimonialcarousel--title">Heading</h4>
+          <h4 className="c-testimonialcarousel--title">this is the static heading for the testimonial carousel</h4>
           <Slider {...settings}>
-            {data.testimonials.map((testimonial, index) => {
+            {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
               return <div className="c-testimonialcarousel--container">
                 <div className="c-testimonialcarousel__inner">
                   <div className="c-testimonialcarousel__data">
@@ -54,12 +57,12 @@ class TestimonialCarousel extends Component {
                       <p>{testimonial.body}</p>
                     </div>
                     <div className="c-testimonialcarousel__data--info">
-                      <div className="c-testimonialcarousel__data--info-hero mr-1">
+                      <div className="c-testimonialcarousel__data--info-hero">
                         <img src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
                       </div>
-                      <div className="c-testimonialcarousel__data--info-name ml-1">
-                        <li>{testimonial.title}</li>
-                        <li></li>
+                      <div className="c-testimonialcarousel__data--info-name">
+                        <li className="c-testimonialcarousel__data--info-name__title">{testimonial.title}</li>
+                        <li className="c-testimonialcarousel__data--info-name__date">{moment(testimonial.createdAt).format('MMMM Do YYYY')}</li>
                       </div>
                     </div>
                   </div>
