@@ -43,7 +43,7 @@ class Index extends Component {
         <hr />
       </div>
       <div className="c-testimonialcarousel pb-4">
-        <TestimonialCarousel />
+        <TestimonialCarousel testimonialSize={6} />
       </div>
 
       <NewsArticleMain newsArticleSize={3} />
