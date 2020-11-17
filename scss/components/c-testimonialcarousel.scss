@@ -1,6 +1,6 @@
 .c-testimonialcarousel {
   color: $darkgrey;
-  max-width: 1070px;
+  max-width: 1000px;
   margin: auto;
     .slick-prev:before,
     .slick-next:before {
@@ -15,7 +15,7 @@
     }
     &--title {
       margin: auto;
-      width: 400px;
+      max-width: 800px;
       text-align: center;
       padding: 2em;
       font-size: 16px;
@@ -46,13 +46,15 @@
       &--text::before {
         content: open-quote;
         font-size: 100px;
-        line-height: 88px;
+        line-height: 70px;
+        color: $button;
       }
       &--text::after {
         content: close-quote;
         align-self: flex-end;
         font-size: 100px;
         line-height: 20px;
+        color: $button;
       }
       &--info {
         display: flex;
@@ -63,6 +65,7 @@
           height: 90px;
           width: 90px;
           position: relative;
+          padding: .5rem;
           img {
             object-fit: scale-down;
             height: 100%;
@@ -76,7 +79,63 @@
         &-name {
           display: flex;
           flex-direction: column;
+          padding: .5rem;
+          li {
+            padding: 5px 0;
+          }
+          &__title {
+
+          }
+          &__date {
+            color: $success;
+            font-size: 12px;
+          }
         }
       }
     }
+}
+
+@media screen and (max-width: 525px) {
+  .c-testimonialcarousel {
+    .slick-next {
+      right: -50px !important;
+    }
+    .slick-prev {
+      left: -50px !important;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .c-testimonialcarousel {
+    .slick-slider {
+      height: 250px;
+    }
+    &__data {
+      &--text {
+        p {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+      &--text::before {
+        font-size: 80px;
+        line-height: 50px;
+      }
+      &--text::after {
+        font-size: 80px;
+        line-height: 30px;
+      }
+      &--info {
+        margin: auto;
+        flex-direction: row;
+        &-hero {
+          height: 65px;
+          width: 65px;
+        }
+        &-name {
+          max-width: 215px;
+        }
+      }
+    }
+  }
 }
