@@ -23,7 +23,7 @@ class Footer extends Component {
   }
 
   renderFooterListFirst () {
-    return this.state.footerBarFirstOpen ? 'footer-item-active' : ''
+    return this.state.footerBarFirstOpen ? 'footer-item-active-flex' : ''
   }
 
   renderFooterListSecond () {
