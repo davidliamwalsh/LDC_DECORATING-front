@@ -31,7 +31,13 @@ class TestimonialCarousel extends Component {
       infinite: true,
       speed: 600,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      }]
     }
 
     const { testimonialSize } = this.props

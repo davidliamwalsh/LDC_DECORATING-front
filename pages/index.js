@@ -46,7 +46,7 @@ class Index extends Component {
         <TestimonialCarousel testimonialSize={6} />
       </div>
 
-      <NewsArticleMain newsArticleSize={3} />
+      <NewsArticleMain newsArticleSize={5} />
 
       <div className="o-section-head">
         <h4 className="o-section-head__title">
