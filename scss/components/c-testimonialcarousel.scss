@@ -2,9 +2,10 @@
   color: $darkgrey;
   max-width: 1000px;
   margin: auto;
+  overflow: hidden;
     .slick-prev:before,
     .slick-next:before {
-      color: $lightgrey;
+      color: $button;
       font-size: 26px;
     }
     .slick-slider {
@@ -82,9 +83,6 @@
           padding: .5rem;
           li {
             padding: 5px 0;
-          }
-          &__title {
-
           }
           &__date {
             color: $success;

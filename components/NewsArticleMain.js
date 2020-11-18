@@ -4,6 +4,7 @@ import gql from 'graphql-tag'
 import moment from 'moment'
 import { Facebook } from 'react-content-loader'
 import Link from 'next/link'
+import Slider from 'react-slick'
 
 class NewsArticleMain extends Component {
 
@@ -26,6 +27,37 @@ class NewsArticleMain extends Component {
   }
 
   render () {
+    const settings = {
+      className: "center",
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true,
+      speed:500,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    }
+
     const { newsArticleSize } = this.props
     const MyFacebookLoader = () => <Facebook />
 
@@ -52,30 +84,30 @@ class NewsArticleMain extends Component {
                 <hr />
               </div>
               <div className="c-news-article-main__main">
+              <Slider {...settings}>
                 {data.newsArticles.slice(0, newsArticleSize).map((newsArticle, index) => {
                   return (
-                    <li className="c-news-article-main__item" key={index} data-aos="flip-right">
-                      <div className="c-news-article-main__item--inner">
-                        <div className="c-news-article-main__item--inner-date">
-                          <h5 className="c-news-article-main__item--inner-date__text">{moment(newsArticle.createdAt).format('MMM Do')}</h5>
-                        </div>
-                        <div className="c-news-article-main__item--inner-news">
-                          <div className="c-news-article-main__item--inner-news__hero">
-                            <img className="c-news-article-main__item--inner-news__hero_image" src={`${process.env.BACKEND_URL}${newsArticle.previewImage}`} />
+                    <div class="slider">
+                      <div>
+                        <div class="item">
+                          <div className="c-news-article-main__item--inner-hero">
+                            <img className="c-news-article-main__item--inner-hero__image" src={`${process.env.BACKEND_URL}${newsArticle.previewImage}`} />
                           </div>
-                          <div className="c-news-article-main__item--inner-news__main">
-                            <h5 className="c-news-article-main__item--inner-news__title">{newsArticle.title}</h5>
-                            <hr className="c-news-article-main__item--inner-news__hr" />
-                            <h5 className="c-news-article-main__item--inner-news__body">{newsArticle.body}</h5>
+                          <div className="c-news-article-main__item--inner-main">
+                            <h5 className="c-news-article-main__item--inner-title">{newsArticle.title}</h5>
+                            <h5 className="c-news-article-main__item--inner-body">{newsArticle.body}</h5>
+                            <h5 className="c-news-article-main__item--inner-date">{moment(newsArticle.createdAt).format('MMM Do')}</h5>
                           </div>
                         </div>
                       </div>
-                    </li>
+                    </div>
                   )
                 })}
+                </Slider>
               </div>
             </div>
           </div>
+          
         }
       }}
     </Query>
