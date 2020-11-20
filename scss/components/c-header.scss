@@ -1,6 +1,17 @@
 .c-header {
   position: relative; 
 
+  // Slider Custom
+
+  .slick-prev {
+    left: 25px !important;
+    background: transparent;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 25px !important;
+    background: transparent;
+  }
   &__first {
     background-image: url('/static/banner/banner5.jpg');
   }
@@ -22,6 +33,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(50%);
+    
 
     &-container {
       display: flex;
@@ -107,16 +119,4 @@
       font-size: 26px;
     }
   }  
-}
-
-// Slider Custom
-
-.slick-prev {
-  left: 45px !important;
-  background: transparent;
-  z-index: 2;
-}
-.slick-next {
-  right: 45px !important;
-  background: transparent;
 }
