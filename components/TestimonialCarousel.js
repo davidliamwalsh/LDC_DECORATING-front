@@ -27,6 +27,7 @@ class TestimonialCarousel extends Component {
 
   render () {
     const settings = {
+      arrows: true,
       dots: true,
       infinite: true,
       speed: 600,

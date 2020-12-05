@@ -38,7 +38,7 @@ class NewsArticleMain extends Component {
       speed:500,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 769,
           settings: {
             arrows: false,
             centerMode: true,

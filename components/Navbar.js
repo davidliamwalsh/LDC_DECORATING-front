@@ -40,13 +40,28 @@ class Navbar extends Component {
     return this.state.navBarOpen ? 'c-navbar__burger-bottom' : ''
   }
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.handeleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handeleScroll);
+  }
+
+  handeleScroll() {
+    if (window.pageYOffset > 50) {
+      document.getElementById("nav").classList.add('nav-down')
+    } else {
+      document.getElementById("nav").classList.remove('nav-down')
+    }
+  }
+
   render () {
     return (
-      <div className={`c-nav ${this.renderTransparantNavBar()}`}>
+      <div className={`c-nav ${this.renderTransparantNavBar()}`} id="nav">
         <div className={`c-navbar`}>
           <div className="c-navbar__logo">
             <img className="c-navbar__logo--hero" src="/static/ldc-logo.png" alt="" />
-            
           </div>
           <div className="c-navbar__burger" onClick={this.burgerClick}>
             <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
