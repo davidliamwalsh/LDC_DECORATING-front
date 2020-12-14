@@ -13,12 +13,14 @@ class Layout extends Component {
   constructor(props){
     super(props);
   }
+
   componentDidMount(){
     AOS.init({
       duration : 2000,
       offset: 50
     })
   }
+
   render () {
     if (this.props.router.pathname === '/contact') {
       return <>

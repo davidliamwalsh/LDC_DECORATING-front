@@ -2,6 +2,8 @@ import { Component } from 'react'
 import { withRouter } from 'next/router'
 import Link from 'next/link'
 
+const MODAL_OPEN_CLASS = "body--modal-open";
+
 class Navbar extends Component {
   constructor (props) {
     super(props)
@@ -14,6 +16,7 @@ class Navbar extends Component {
 
   burgerClick () {
     this.setState({ navBarOpen: !this.state.navBarOpen })
+    document.body.classList.toggle('hidden')
   }
 
   renderBurgerMenu () {
@@ -40,22 +43,7 @@ class Navbar extends Component {
     return this.state.navBarOpen ? 'c-navbar__burger-bottom' : ''
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handeleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handeleScroll);
-  }
-
-  handeleScroll() {
-    if (window.pageYOffset > 50) {
-      document.getElementById("nav").classList.add('nav-down')
-    } else {
-      document.getElementById("nav").classList.remove('nav-down')
-    }
-  }
-
+ 
   render () {
     return (
       <div className={`c-nav ${this.renderTransparantNavBar()}`} id="nav">

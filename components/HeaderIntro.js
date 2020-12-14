@@ -2,22 +2,6 @@ import { Component } from 'react'
 import Link from 'next/link'
 
 class HeaderIntro extends Component {
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handeleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handeleScroll);
-  }
-
-  handeleScroll() {
-    if (window.pageYOffset > 20) {
-      document.getElementById("head-intro").classList.add('head-down')
-    }  else {
-      document.getElementById("head-intro").classList.remove('head-down')
-    }
-  }
   
   render () {
     return <div className="c-top" id="head-intro">

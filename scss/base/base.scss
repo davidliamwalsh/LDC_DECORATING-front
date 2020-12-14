@@ -38,6 +38,11 @@ a {
 .remove-footer-item {
   display: block;
 }
+
+.hidden{
+  overflow: hidden;
+}
+
 @media screen and (min-width: $tablet-break) {
   .remove-footer-item {
     display: none;

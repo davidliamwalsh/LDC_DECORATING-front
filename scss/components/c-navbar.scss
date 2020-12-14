@@ -91,8 +91,8 @@
   &__links {
     display: flex;
     list-style: none;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     margin-left: auto;
     position: fixed;
     height: 100vh;
@@ -111,6 +111,7 @@
 
   &__link { 
     opacity: 0;
+    padding: 1.5em;
 
     a {
       color: $white;
@@ -119,6 +120,7 @@
 
     &:nth-child(1) {
       transition: all 0.5s ease 0.2s;
+      padding-top: 3em;
     }
     &:nth-child(2) {
       transition: all 0.5s ease 0.4s;
@@ -212,7 +214,7 @@
     &__links {
       position: relative;
       width: auto;
-      height: 10vh;
+      height: 75px;
       flex-direction: row;
       clip-path: none;
       -webkit-clip-path: none;
@@ -233,6 +235,7 @@
 
       &:nth-child(1) {
         transition: none;
+        padding-top: 0;
       }
       &:nth-child(2) {
         transition: none;
