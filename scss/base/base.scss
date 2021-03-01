@@ -27,3 +27,27 @@ a {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+.slick-arrow {
+    z-index: 9;
+}
+
+.display-footer-item {
+  display: none;
+}
+.remove-footer-item {
+  display: block;
+}
+
+.hidden{
+  overflow: hidden;
+}
+
+@media screen and (min-width: $tablet-break) {
+  .remove-footer-item {
+    display: none;
+  }
+  .display-footer-item {
+    display: block;
+  }
+}

@@ -8,6 +8,13 @@
       color: $button;
       font-size: 26px;
     }
+
+    .slick-next {
+      right: 50px !important;
+    }
+    .slick-prev {
+      left: 50px !important;
+    }
     .slick-slider {
       height: 300px;
     }
@@ -93,16 +100,6 @@
     }
 }
 
-@media screen and (max-width: 525px) {
-  .c-testimonialcarousel {
-    .slick-next {
-      right: -50px !important;
-    }
-    .slick-prev {
-      left: -50px !important;
-    }
-  }
-}
 @media screen and (max-width: 425px) {
   .c-testimonialcarousel {
     .slick-slider {
