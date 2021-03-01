@@ -102,7 +102,7 @@
 @media screen and (min-width: $tablet-break) {
   .c-footer-upper {
     display: grid;
-    grid-template-columns: auto 25% 30% 30%;
+    grid-template-columns: 25% 40% 30%;
     grid-gap: 1em;
 
     &__list {
@@ -138,10 +138,29 @@
       }
     }
   }
+
+  .c-footer-inner__list {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: .5em;
+    &--body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .inner-item {
+        padding: .5em;
+      }
+
+      .inner-item:first-child {
+        padding-left: 0;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: $desktop-break) {
   .c-footer-upper {
     padding: 1em 0;
+    grid-template-columns: 25% 40% 35%;
   }
 }

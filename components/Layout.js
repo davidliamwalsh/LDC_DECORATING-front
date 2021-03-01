@@ -13,13 +13,17 @@ class Layout extends Component {
   constructor(props){
     super(props);
   }
+
   componentDidMount(){
+    document.body.classList.remove("hidden")
     AOS.init({
       duration : 2000,
       offset: 50
     })
   }
-  render () {
+
+  render () { 
+    
     if (this.props.router.pathname === '/contact') {
       return <>
         <MetaTags>

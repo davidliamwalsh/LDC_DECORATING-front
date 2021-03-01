@@ -87,12 +87,15 @@
     transform: scale(1.2);
     transition: transform .5s;
   }
+  .slick-track {
+    margin-bottom: 2em;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-news-article-main { 
     .slider div{
-      margin: 0 10px;
+      margin: 0 5px;
     }
     .item{
       -webkit-transform: scale(1);

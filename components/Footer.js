@@ -33,9 +33,49 @@ class Footer extends Component {
   render () {
     return (
       <div className="c-footer__container">
-        <div className="c-footer-upper">
 
-          <div className="c-footer-upper__list">
+        <div className="c-footer-inner__list display-footer-item">     
+            <div className="c-footer-inner__list--body">
+              <li className="c-footer-upper__list--item inner-item">
+                <Link href='/'>
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item inner-item">
+                <Link href='/services'>
+                  <a>Services</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item inner-item">
+                <Link href='/sectors'>
+                  <a>Sectors</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item inner-item">
+                <Link href='/testimonials'>
+                  <a>Testimonials</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item inner-item">
+                <Link href='/about'>
+                  <a>About Us</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item inner-item">
+                <Link href='/contact'>
+                  <a>Contact</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item inner-item">
+                <Link href='/careers'>
+                  <a>Careers</a>
+                </Link>
+              </li>
+            </div>
+          </div>
+
+        <div className="c-footer-upper">
+          <div className="c-footer-upper__list remove-footer-item">
             <div className="c-footer-upper__list--head">
               <h4 className="c-footer-upper__list--head-title">Links</h4>
               <hr className="o-line" />

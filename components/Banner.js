@@ -112,6 +112,7 @@ class Banner extends Component {
   }
 
   render () {
+    
     return <div className={`
     c-banner 
     ${this.renderBannerServices()} 

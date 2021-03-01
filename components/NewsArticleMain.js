@@ -38,7 +38,7 @@ class NewsArticleMain extends Component {
       speed:500,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 769,
           settings: {
             arrows: false,
             centerMode: true,
@@ -87,9 +87,9 @@ class NewsArticleMain extends Component {
               <Slider {...settings}>
                 {data.newsArticles.slice(0, newsArticleSize).map((newsArticle, index) => {
                   return (
-                    <div class="slider">
+                    <div className="slider">
                       <div>
-                        <div class="item">
+                        <div className="item">
                           <div className="c-news-article-main__item--inner-hero">
                             <img className="c-news-article-main__item--inner-hero__image" src={`${process.env.BACKEND_URL}${newsArticle.previewImage}`} />
                           </div>
