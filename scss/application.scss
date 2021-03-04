@@ -11,7 +11,6 @@
 @import 'components/c-product-services';
 @import 'components/c-testimonialcarousel';
 @import 'components/c-testimonial';
-@import 'components/c-news-article-main';
 @import 'components/c-accreditations';
 @import 'components/c-quote';
 @import 'components/c-footer-upper';
@@ -32,5 +31,7 @@
 @import 'objects/o-section-head';
 @import 'objects/o-head';
 @import 'objects/o-grids';
+
+@import 'keyframes/k-navbar.scss';
 
 @import 'components/global';

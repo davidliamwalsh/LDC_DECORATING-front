@@ -3,9 +3,8 @@ import withData from '../lib/withData'
 import Link from 'next/link'
 
 import ClientServices from '../components/ClientServices'
-import ProductServices from '../components/ProductServices'
+import WhyChoose from '../components/WhyChoose'
 import TestimonialCarousel from '../components/TestimonialCarousel'
-import NewsArticleMain from '../components//NewsArticleMain'
 import Accreditations from '../components/Accreditations'
 import Layout from '../components/Layout'
 
@@ -29,7 +28,7 @@ class Index extends Component {
       </div>
       <ClientServices />
 
-      <ProductServices />
+      <WhyChoose />
 
       <div className="o-section-head">
         <h4 className="o-section-head__title">
@@ -39,14 +38,12 @@ class Index extends Component {
           <a className="o-btn">View all</a>
         </Link>
       </div>
-      <div className="o-section-head__line">
+      <div className="o-section-head__line ">
         <hr />
       </div>
-      <div className="c-testimonialcarousel pb-4">
+      <div className="c-testimonialcarousel pb-4 pt-2">
         <TestimonialCarousel testimonialSize={6} />
       </div>
-
-      <NewsArticleMain newsArticleSize={5} />
 
       <div className="o-section-head">
         <h4 className="o-section-head__title">
