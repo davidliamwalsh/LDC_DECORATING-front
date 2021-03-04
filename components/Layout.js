@@ -8,6 +8,7 @@ import '../scss/application.scss'
 import AOS from 'aos';
 import MetaTags from 'react-meta-tags';
 import { withRouter } from 'next/router'
+import CookieConsent from "react-cookie-consent"
 
 class Layout extends Component {
   constructor(props){
@@ -40,6 +41,7 @@ class Layout extends Component {
         <ScrolltoTop />
           { this.props.children }
         <Footer />
+        <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
         <script src="https://unpkg.com/aos@next/dist/aos.js" />
       </>
     } else {
@@ -59,6 +61,7 @@ class Layout extends Component {
           { this.props.children }
         <Quote />
         <Footer />
+        <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
         <script src="https://unpkg.com/aos@next/dist/aos.js" />
       </>
     }
