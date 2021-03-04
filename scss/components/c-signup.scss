@@ -59,7 +59,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 260px auto;
-    grid-column-gap: 2em;
+    grid-column-gap: 3em;
     justify-content: flex-start;
     text-align: left;
   }
@@ -72,8 +72,8 @@
     p {
       font-size: 24px;
       line-height: 1.5;
-      word-spacing: 5px;
-      letter-spacing: 2px;
+      word-spacing: 4px;
+      letter-spacing: 1px;
     }
   }
 

@@ -43,6 +43,41 @@ a {
   overflow: hidden;
 }
 
+
+.services {
+  &--decorative-coatings {
+    background: url(/static/services/decorative-wall.jpg);
+  }
+  &--protective-coatings {
+    background: url(/static/services/protective-covering.jpeg);
+  }
+  &--painting {
+    background: url(/static/services/painting.jpg);
+  }
+  &--internal-external-paint-spray {
+    background: url(/static/services/spraypaint.jpg);
+  }
+  &--cladding-restoration {
+    background: url(/static/services/cladding.jpg);
+  }
+  &--rendering-plastering {
+    background: url(/static/services/plastering.jpeg);
+  }
+
+  &--retail {
+    background: url(/static/sectors/retail.jpg);
+  }
+  &--factories {
+    background: url(/static/sectors/factories.jpg);
+  }
+  &--schools {
+    background: url(/static/sectors/schools.jpg);
+  }
+  &--offices {
+    background: url(/static/sectors/offices.jpg);
+  }
+}
+
 @media screen and (min-width: $tablet-break) {
   .remove-footer-item {
     display: none;

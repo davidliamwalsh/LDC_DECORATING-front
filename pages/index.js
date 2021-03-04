@@ -22,6 +22,9 @@ class Index extends Component {
         <h4 className="o-section-head__title">
           Client Services
         </h4>
+        <Link href='/services'>
+          <a className="o-btn">View all</a>
+        </Link>
       </div>
       <div className="o-section-head__line">
         <hr />
