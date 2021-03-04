@@ -99,23 +99,6 @@ class Navbar extends Component {
                 <a>Contact</a>
               </Link>
             </li>
-            <li className={`c-navbar__link c-navbar__action ${this.addFadeMenu()}`}>
-              <a className="c-navbar__action-link" href={`${process.env.BACKEND_URL}/admin`}>Admin</a>
-            </li>
-          </div>
-
-          <div className="c-navbar__actions">
-            
-            <div className="c-navbar__actions-signIn">
-              <Link href={`${process.env.BACKEND_URL}/admin`}>
-                <a>Admin</a>
-              </Link>
-            </div>
-            <div className="c-navbar__actions-checkout">
-              <Link href='/'>
-                <a><i className="fas fa-shopping-basket"></i></a>
-              </Link>
-            </div>
           </div>
         </div> 
       </div>

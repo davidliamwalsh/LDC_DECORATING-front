@@ -123,6 +123,10 @@
     a {
       color: $white;
       font-size: 20px;
+
+      &:hover {
+        color: $xlightgrey;
+      }
     }
 
     &:nth-child(1) {
@@ -178,8 +182,8 @@
 
 @media screen and (min-width: 1000px) {
   .c-navbar {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     padding: 0 1em;
@@ -189,29 +193,6 @@
       left: auto;
       top: auto;
       transform: none;
-    }
-
-    &__actions {
-      display: flex;
-      justify-content: flex-end;
-      a {
-        color: $white;
-        font-size: 18px;
-      }
-      
-      &-shop {
-        a {
-          padding: 0 1vw;
-        }
-      }
-
-      .fas {
-        color: $white;
-      }
-    }
-
-    &__action {
-      display: none;
     }
 
     &__burger {
@@ -233,7 +214,7 @@
 
     &__link {
       opacity: 1;
-      padding: 0 1vw;
+      padding: 0 1em;
 
       a {
         font-size: 18px;
@@ -264,6 +245,9 @@
       }
       &:nth-child(8) {
         transition: none;
+      }
+      &:last-child {
+        padding-right: 0;
       }
     }
   }
