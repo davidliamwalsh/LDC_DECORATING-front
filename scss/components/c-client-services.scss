@@ -1,50 +1,41 @@
 .c-client-services {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1em;
-  color: $darkgrey;
-  line-height: 135%;
 
-  &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+  &__card {
+    text-align: center;
 
-    &--hero {
-      color: $button;
-      
-      span {
-        font-size: 5em;
-      }
+    &--image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 200px;
     }
 
     &--title {
-      &-text {
-        text-align: center;
-        font-size: 16px;
-        text-transform: uppercase;
-        padding: 1em 0 .5em 0;
-      }
-    }
-
-    &--main {
-      &-text {
-        font-weight: 100;
-        font-size: 15px;
-        text-align: center;
-      }
+      font-size: 16px;
+      color: $darkgrey;
+      line-height: 3em;
     }
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: $mobile-break) {
   .c-client-services {
-    grid-template-columns: repeat(2, 1fr);
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
-@media screen and (min-width: $laptop-break) {
+@media screen and (min-width: 900px) {
   .c-client-services {
-    grid-template-columns: repeat(4, 1fr);
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }

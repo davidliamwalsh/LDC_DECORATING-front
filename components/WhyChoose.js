@@ -31,7 +31,7 @@ class WhyChoose extends Component {
                 <p className="c-product-services__main--item-main__description">Successful in operating to partnering, traditional and negotiated single or multi-phased contracts. Call or email us for more information.</p>
               </div>
             </div>
-            <div className="c-product-services__main--item" data-aos="fade" data-aos-delay="200">
+            <div className="c-product-services__main--item" data-aos="fade">
               <div className="c-product-services__main--item-image">
                 <span><FontAwesomeIcon icon={faGraduationCap} /></span>
               </div>
@@ -49,7 +49,7 @@ class WhyChoose extends Component {
                 <p className="c-product-services__main--item-main__description">Providing specialists with the ability restore bygone buildings to their former glory to meeting the standards of modern day Commercial developments.</p>
               </div>
             </div>
-            <div className="c-product-services__main--item" data-aos="fade" data-aos-delay="200">
+            <div className="c-product-services__main--item" data-aos="fade">
               <div className="c-product-services__main--item-image">
                 <span><FontAwesomeIcon icon={faClock} /></span>
               </div>
