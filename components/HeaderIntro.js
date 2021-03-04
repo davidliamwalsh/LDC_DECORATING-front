@@ -28,12 +28,6 @@ class HeaderIntro extends Component {
             </li>
             <li>|</li>
             <li className="c-header-intro__links--link">
-              <Link href='/careers'>
-                <a>Careers</a>
-              </Link>
-            </li>
-            <li>|</li>
-            <li className="c-header-intro__links--link">
               <Link href='/contact'>
                 <a>Contact</a>
               </Link>

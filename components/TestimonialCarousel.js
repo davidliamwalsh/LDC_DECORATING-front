@@ -53,9 +53,7 @@ class TestimonialCarousel extends Component {
             </div>
           )
         } else {
-          return <>
-          <h4 className="c-testimonialcarousel--title">this is the static heading for the testimonial carousel</h4>
-          <Slider {...settings}>
+          return <Slider {...settings}>
             {data.testimonials.slice(0, testimonialSize).map((testimonial, index) => {
               return <div className="c-testimonialcarousel--container">
                 <div className="c-testimonialcarousel__inner">
@@ -64,9 +62,6 @@ class TestimonialCarousel extends Component {
                       <p>{testimonial.body}</p>
                     </div>
                     <div className="c-testimonialcarousel__data--info">
-                      <div className="c-testimonialcarousel__data--info-hero">
-                        <img src={`${process.env.BACKEND_URL}${testimonial.previewImage}`} />
-                      </div>
                       <div className="c-testimonialcarousel__data--info-name">
                         <li className="c-testimonialcarousel__data--info-name__title">{testimonial.title}</li>
                         <li className="c-testimonialcarousel__data--info-name__date">{moment(testimonial.createdAt).format('MMMM Do YYYY')}</li>
@@ -77,7 +72,6 @@ class TestimonialCarousel extends Component {
               </div>
             })}
           </Slider>
-          </>
         }
       }}
     </Query>

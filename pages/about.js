@@ -41,9 +41,9 @@ class About extends Component {
               <a className="c-about-links__box--link">Careers</a>
             </div>
           </Link>
-          <Link href='/news'>
+          <Link href='/sectors'>
             <div className="c-about-links__box">
-              <a className="c-about-links__box--link">News</a>
+              <a className="c-about-links__box--link">Sectors</a>
             </div>
           </Link>
         </div>

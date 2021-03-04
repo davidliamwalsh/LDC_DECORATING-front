@@ -18,9 +18,6 @@ class Banner extends Component {
   renderBannerCareers () {
     return this.props.router.pathname === '/careers' ? 'c-banner__careers c-banner__image' : ''
   }
-  renderBannerNews () {
-    return this.props.router.pathname === '/news' ? 'c-banner__news c-banner__image' : ''
-  }
 
   renderBannerContact () {
     return this.props.router.pathname === '/contact' ? 'c-banner__none' : ''
@@ -76,9 +73,6 @@ class Banner extends Component {
   renderBannerCareersTitle () {
     return this.props.router.pathname === '/careers' ? 'c-banner__active' : ''
   }
-  renderBannerNewsTitle () {
-    return this.props.router.pathname === '/news' ? 'c-banner__active' : ''
-  }
 
   renderBannerServicesPaintingTitle () {
     return this.props.router.pathname === '/services/painting' ? 'c-banner__active' : ''
@@ -121,7 +115,6 @@ class Banner extends Component {
     ${this.renderBannerAbout()} 
     ${this.renderBannerContact()}
     ${this.renderBannerLegal()}
-    ${this.renderBannerNews()}
     ${this.renderBannerCareers()}
 
     ${this.renderBannerServicesPainting()} 
@@ -153,10 +146,6 @@ class Banner extends Component {
           <h2 className={`c-banner__title--sectors ${this.renderBannerCareersTitle()}`}>
             Careers
           </h2>
-          <h2 className={`c-banner__title--sectors ${this.renderBannerNewsTitle()}`}>
-            News
-          </h2>
-
           <h2 className={`c-banner__title--about ${this.renderBannerServicesPaintingTitle()}`}>
             Painting
           </h2>

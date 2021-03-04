@@ -1,5 +1,4 @@
 import { Component } from 'react'
-import NewsArticleFooter from '../components//NewsArticleFooter'
 import Link from 'next/link'
 
 class Footer extends Component {
@@ -42,6 +41,11 @@ class Footer extends Component {
                 </Link>
               </li>
               <li className="c-footer-upper__list--item inner-item">
+                <Link href='/about'>
+                  <a>About Us</a>
+                </Link>
+              </li>
+              <li className="c-footer-upper__list--item inner-item">
                 <Link href='/services'>
                   <a>Services</a>
                 </Link>
@@ -57,18 +61,13 @@ class Footer extends Component {
                 </Link>
               </li>
               <li className="c-footer-upper__list--item inner-item">
-                <Link href='/about'>
-                  <a>About Us</a>
+                <Link href='/careers'>
+                  <a>Careers</a>
                 </Link>
               </li>
               <li className="c-footer-upper__list--item inner-item">
                 <Link href='/contact'>
                   <a>Contact</a>
-                </Link>
-              </li>
-              <li className="c-footer-upper__list--item inner-item">
-                <Link href='/careers'>
-                  <a>Careers</a>
                 </Link>
               </li>
             </div>
@@ -166,7 +165,7 @@ class Footer extends Component {
               <hr className="o-line" />
             </div>
             <div className={`c-footer-upper__list--body footer-item-active`}>
-              <NewsArticleFooter newsArticleSize={3} />
+              
             </div>
           </div>
 

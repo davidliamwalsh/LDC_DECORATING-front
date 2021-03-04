@@ -102,10 +102,6 @@ app.prepare()
     })
   })
 
-  server.get('/news', (req, res) => {
-    return app.render(req, res, '/news', req.query)
-  })
-
   server.get('/careers', (req, res) => {
     return app.render(req, res, '/careers', req.query)
   })

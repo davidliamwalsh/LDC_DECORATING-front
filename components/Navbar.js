@@ -14,7 +14,7 @@ class Navbar extends Component {
   
   burgerClick () {
     this.setState({ navBarOpen: !this.state.navBarOpen })
-    document.body.classList.add("hidden")
+    document.body.classList.toggle("hidden")
   }
   
   renderBurgerMenu () {
@@ -59,7 +59,9 @@ class Navbar extends Component {
       <div className={`c-nav ${this.renderTransparantNavBar()}`} id="nav">
         <div className={`c-navbar`}>
           <div className="c-navbar__logo">
-            <img className="c-navbar__logo--hero" src="/static/ldc-logo.png" alt="" />
+            <Link href="/">
+              <a><img className="c-navbar__logo--hero" src="/static/ldc-logo.png" alt="" /></a>
+            </Link>
           </div>
           <div className="c-navbar__burger" onClick={this.burgerClick}>
             <div className={`c-navbar__burger-line--top ${this.burgerRotateTop()}`}></div>
@@ -73,8 +75,8 @@ class Navbar extends Component {
               </Link>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <Link href='/services'>
-                <a>Services</a>
+              <Link href='/about'>
+                <a>About</a>
               </Link>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
@@ -88,8 +90,8 @@ class Navbar extends Component {
               </Link>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
-              <Link href='/about'>
-                <a>About</a>
+              <Link href='/careers'>
+                <a>Careers</a>
               </Link>
             </li>
             <li className={`c-navbar__link ${this.addFadeMenu()}`}>
